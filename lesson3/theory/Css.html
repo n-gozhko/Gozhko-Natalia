@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Указывает, что мы будем делать стили по ссылке на файл style.css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <!--Инлайновый стиль. Когда стиль прописывает в самом теге, не через css-->
+    <p style="color: rebeccapurple;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <p style="color: rgb(185, 63, 175);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    
+    <br><p>Стилевое свойство text-decoration— украшение текста.</p>
+    <p style="text-decoration: none;">обычный текст</p>
+    <p style="text-decoration: underline;">подчеркнутый текст</p>
+    <p style="text-decoration: line-through;">перечёркнутый текст</p>
+    <p style="text-decoration: overline;">надчеркнутый текст</p>
+
+    <br><p>Стилевое свойство text-transform — преобразование текста.</p>
+    <p style="text-transform: none;">обычный текст</p>
+    <p style="text-transform: capitalize;" >делает ПЕРВУЮ БУКВУ каждого слова заглавной</p>
+    <p style="text-transform: uppercase;">делает ВСЕ БУКВЫ заглавными</p>
+    <p style="text-transform: lowercase;">делает ВСЕ БУКВЫ строчными</p>
+
+    <br><p>Стилевое свойство list-style-type</p>
+    <pre>Это вид маркера списка.
+        Может применяться к элементам ul и ol, а также к li.
+        Некоторые возможные значения:
+        none — нет маркера
+        disc — чёрный кружок
+        circle — светлый кружок
+        square — чёрный квадратик
+        decimal — десятичные числа (1, 2, 3, ...)
+        decimal-leading-zero — десятичные числа с ведущим нулем (01, 02, 03, ... 98, 99)
+        lower-roman — строчные римские числа (i, ii, iii, iv, v, ...)
+        upper-roman — прописные римские числа (I, II, III, IV, V, ...)
+        lower-greek — строчные греческие буквы
+        lower-latin — строчные латинские буквы (a, b, c, ..., z)
+        upper-latin — прописные латинские буквы (A, B, C, ..., Z)</pre>
+    <ul>
+        <li>по умолчанию черный кружок</li>
+        <li style="list-style-type:circle">сделаем светлый кружок</li>
+        <li style="list-style-type: square;" >а здесь квадратик</li>
+    </ul>
+    <p>зададим стиль ul</p>
+    <ul style="list-style-type: circle;">
+        <li style="list-style-type: square;"> здесь сделала обозначение квадратом</li>
+        <li>список работает по стилю, заданному в теге ul</li>
+        <li> здесь также по стилю в ul</li>
+        <li style="list-style-image: url(smile.png)" >сюда добавили картинку</li>
+    </ul>
+
+    <p>Стилевое свойство list-style-image — изображение вместо маркера списка.
+        Может применяться к элементам ul и ol.</p>
+    <p style="cursor: pointer;">зададим по умолчанию картинуку на тег ul </p>
+    <ul style="list-style-image: url(smile22.png);">
+        <li style="list-style-image: url(smile.png);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, recusandae? Inventore vitae blanditiis ea obcaecati officia, assumenda explicabo magni reprehenderit, quae provident, quos suscipit maiores porro excepturi natus incidunt facere!</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum facilis quos nemo! Neque cum distinctio alias, reprehenderit aliquid ex dolorum quod necessitatibus facere molestias quidem laborum et nobis vero eaque?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt quos explicabo culpa aperiam beatae dolorem! Corporis rem dolorem dignissimos odio, delectus iure assumenda molestiae eos maxime placeat nisi totam!</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt quos explicabo culpa aperiam beatae dolorem! Corporis rem dolorem dignissimos odio, delectus iure assumenda molestiae eos maxime placeat nisi totam!</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt quos explicabo culpa aperiam beatae dolorem! Corporis rem dolorem dignissimos odio, delectus iure assumenda molestiae eos maxime placeat nisi totam!</li>
+    </ul>
+    
+    <p>Стилевое свойство cursor — форма курсора мыши.
+        Задаёт форму, которую принимает курсор мыши при поднесении к данному элементу.</p>
+    <ul>
+        <li>форма курсора определяется автоматически</li>
+        <li style="cursor: default;" >курсор операционной системы по умолчанию; в Windows — стрелка</li>
+        <li style="cursor: help;" >для данного элемента можно получить справку. стрелка с вопросом</li>
+        <li style="cursor: move;">элемент можно перемещать либо элемент уже перемещается</li>
+        <li style="cursor: pointer;">на элемент можно нажимать/щёлкать. рука</li>
+    </ul>
+        
+    <br>
+
+
+
+</body>
+</html>
