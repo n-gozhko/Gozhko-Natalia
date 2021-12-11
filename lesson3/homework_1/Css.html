@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Указывает, что мы будем делать стили по ссылке на файл style.css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <!--Инлайновый стиль. Когда стиль прописывает в самом теге, не через css-->
+    <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda atque officia tempore inventore, nisi blanditiis ducimus minus, eius numquam ipsam, reiciendis animi dolorem cum. Rem in provident deleniti harum.</p>
+    <br><p>Стилевое свойство text-decoration</p>
+    <p style="text-decoration: none;">обычный текст</p>
+    <p style="text-decoration: underline;">подчеркнутый текст</p>
+    <p style="text-decoration: line-through;">перечёркнутый текст</p>
+    <p style="text-decoration: overline;">надчеркнутый текст</p>
+    <br><p>Стилевое свойство text-transform</p>
+    <p style="text-transform: none;">обычный текст</p>
+    <p style="text-transform: capitalize;" >делает ПЕРВУЮ БУКВУ каждого слова заглавной</p>
+    <p style="text-transform: uppercase;">делает ВСЕ БУКВЫ заглавными</p>
+    <p style="text-transform: lowercase;">делает ВСЕ БУКВЫ строчными</p>
+    <br><p>Стилевое свойство list-style-type</p>
+    <pre>Это вид маркера списка.
+        Может применяться к элементам ul и ol, а также к li.
+        Некоторые возможные значения:
+        none — нет маркера
+        disc — чёрный кружок
+        circle — светлый кружок
+        square — чёрный квадратик
+        decimal — десятичные числа (1, 2, 3, ...)
+        decimal-leading-zero — десятичные числа с ведущим нулем (01, 02, 03, ... 98, 99)
+        lower-roman — строчные римские числа (i, ii, iii, iv, v, ...)
+        upper-roman — прописные римские числа (I, II, III, IV, V, ...)
+        lower-greek — строчные греческие буквы
+        lower-latin — строчные латинские буквы (a, b, c, ..., z)
+        upper-latin — прописные латинские буквы (A, B, C, ..., Z)</pre>
+    <ul>
+        <li>по умолчанию черный кружок</li>
+        <li style="list-style-type:circle">сделаем светлый кружок</li>
+        <li style="list-style-type: square;" >а здесь квадратик</li>
+    </ul>
+    <p>зададим стиль ul</p>
+    <ul style="list-style-type: circle;">
+        <li style="list-style-type: quare;"> здесь сделала обозначение кружочкми</li>
+        <li>список работает по умолчанию</li>
+        <li style="list-style-type: ;"> здесь лис также по умолчанию</li>
+    </ul>
+</body>
+</html>
