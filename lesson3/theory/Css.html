@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <!--Указывает, что мы будем делать стили по ссылке на файл style.css-->
+    <link rel="stylesheet" href="fonts/font.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
    
@@ -69,15 +71,98 @@
     
     <p>Стилевое свойство cursor — форма курсора мыши.
         Задаёт форму, которую принимает курсор мыши при поднесении к данному элементу.</p>
-    <ul>
+    <ul style="font-family: 'Roboto', sans-serif;"> 
         <li>форма курсора определяется автоматически</li>
         <li style="cursor: default;" >курсор операционной системы по умолчанию; в Windows — стрелка</li>
         <li style="cursor: help;" >для данного элемента можно получить справку. стрелка с вопросом</li>
         <li style="cursor: move;">элемент можно перемещать либо элемент уже перемещается</li>
         <li style="cursor: pointer;">на элемент можно нажимать/щёлкать. рука</li>
-    </ul>
-        
+    </ul>  
+    <br><br>
+    <p>Единицы измерения</p>
+    <p>EM. Один em равен размеру родителя. Т.е. при увеличения родителя - увеличивается и дочерний текст.</p>
+    <div style="font-size: 25px;" style="font-family: 'Roboto', sans-serif;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate laboriosam hic  rerum, reprehenderit maiores, impedit quod earum culpa nemo illo magnam. Quaerat, at et eum temporibus voluptates maiores aliquam vero.
+        <p style="font-size: 2em; color: black;">Lorem ipsum dolor sit amet consectetur <span style="font-size: 2em;" >adipisicing elit. </span> Dignissimos eveniet alias pariatur id minus aliquam non eius, reprehenderit reiciendis voluptatem tenetur expedita ipsa impedit. Alias amet voluptatibus cupiditate veniam illo?</p>
+        <p>Т.е. тег span имеет родительский тег p и в два раза больше его. Тег p имеет родительский тег div и в два раза больше его. Т.е. тег span в 4 раза больше тега div</p>
+    </div>
     <br>
+    <p>REM. Один rem равен размеру html. Т.е. при увеличении шрифта html - увеличивается и текст с Rem</p>
+    <div style="font-size: 1rem; font-family: 'Roboto', sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora commodi est vitae, libero architecto enim repudiandae unde optio aspernatur eveniet odit sit quas qui aperiam dolores amet fuga iure nisi!
+    <p style="font-size: 2rem; color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse consectetur maxime nostrum dolores dignissimos, ratione sapiente, molestiae officiis veritatis assumenda animi quidem sunt quo. Voluptatibus ut quidem amet repellendus.</p>
+    </div>
+    <br>
+    <div style=" width: 50vw; height: 50vh; background-color: rosybrown;" >
+
+    </div>
+    <p>VW и VH используются, когда необходимо блок сделать размером таким же, как окно браузера.
+        Если мы уменьшаем окно - уменьшается и сам размер блока. Они равны всегда. Но так как блок автоматически 
+        выравнивается 100% по ширине, то лучше устанавливать vh - высота.
+    </p>
+    <p style="color: black; font-family: 'Corinthia-Regular';">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni soluta quod unde facere doloremque. Nihil sunt vitae unde sit perspiciatis, nulla officia, quas vero aliquam soluta fuga at nam voluptate.</p>
+    <br><p>Стилевое свойство text-indent — красная строка.</p>
+    <p style="text-indent: 2cm; color: black;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, <br>consectetur labore dignissimos asperiores quod eveniet saepe obcaecati numquam tempora dolor, provident iure aliquam<br> maiores nihil omnis commodi, quia consequuntur. Labore!</p>
+    <br>
+    <h2>Стилевые свойства для управления шрифтом</h2>
+    <p>Стилевое свойство line-height — высота строки (интервал между строками).
+    Задаёт минимальную высоту строк для шрифта, которым будет отображаться содержимое элемента.</p>
+    <ul>
+        <li style="line-height: 40px;">line-height: размер — явно задаёт высоту строки.</li>
+        <li style="line-height:3">line-height: число — задаёт высоту строки, равную размеру шрифта, умноженному на указанное число.</li>
+        <li style="line-height:normal">line-height: normal — обычная высота строки, зависящая от размера шрифта.</li>
+    </ul>
+    <p>Стилевое свойство font-weight — жирность шрифта.
+    Задаёт жирность шрифта, которым будет отображаться содержимое элемента.</p>
+    <ul>
+        <li style="font-weight: bold;">font-weight: bold — жирный шрифт.</li>
+        <li style="font-weight: normal;">font-weight: normal — нормальный (нежирный) шрифт.</li>
+        <li style="font-weight: bolder;">font-weight: bolder — жирнее чем у контейнера. Также допустимо значение lighter — светлее (менее жирно) чем у контейнера. Не рекомендуется использовать.</li>
+        <li style="font-weight: 700;">font-weight: число — явное задание жирности. Могут быть указаны значения 100, 200, 300, 400, 500, 600, 700, 800, 900. Их трактовка зависит от браузера, поэтому их не рекомендуется использовать.</li>
+    </ul>
+    <p>Стилевое свойство font-style — стиль шрифта.</p>
+    <ul>
+        <li style="font-style: italic;">font-style: italic — курсивный шрифт. Его начертание, в общем случае, отличается от обычного, если используемый шрифт содержит символы такого начертания.</li>
+        <li style="font-style: oblique;">font-style: oblique — наклонный шрифт. Его начертание совпадает с обычным, символы обычного начертания просто наклоняются вправо.
+        Если используемый шрифт содержит не оба начертания (italic и oblique), а только одно из них (а таково большинство шрифтов), браузер будет использовать имеющееся начертание, 
+        независимо от того, какое значение установлено стилевому свойству font-style — italic либо oblique.</li>
+        <li>font-style: normal — обычный шрифт.</li>
+    </ul>
+    <p>Стилевое свойство font-variant — устанавливает способ отображения строчных букв.</p>
+    <ul>
+        <li style="font-variant: normal;" >font-variant: normal — строчные буквы отображаются обычным способом.</li>
+        <li style="font-variant: small-caps;">font-variant: small-caps — ВМЕСТО строчных букв отображаются заглавные, уменьшенные до размера строчных.</li>
+    </ul>
+    <p>Стилевое свойство letter-spacing — интервал между буквами.</p>
+    <ul>
+        <li style="letter-spacing: 20px;" >letter-spacing: размер — задаёт интервал, который может быть как положительным, так и отрицательным.</li>
+        <li style="letter-spacing: normal;">letter-spacing: normal — обычный интервал.</li>
+    </ul>
+    <p>Стилевое свойство word-spacing — интервал между словами.</p>
+    <ul>
+        <li style="word-spacing: 20px;" >word-spacing: размер — задаёт интервал, который может быть как положительным, так и отрицательным.</li>
+        <li style="word-spacing: normal;">word-spacing: normal — обычный интервал.</li>
+    </ul>
+    <p>Шрифты имеют родовое имя. Это семейтсов шрифта. Туда относят все максимально похожие между собой шрифты.
+    И если наш шрифт по какой-то причине не заработает - мы можем взять другой шрифт из этого семейства.
+    Обычно прописывается имя шрифта, затем его семйство</p>
+    <p>Стилевое свойство font позволяет задать несколько реквизитов шрифта сразу, одной записью. Размер шрифта и имя шрифта должны быть заданы обязательно.
+        Синтаксис:
+        font: [font-style] [font-variant] [font-weight] font-size [/line-height] font-family</p>
+    <!-- /*font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;
+    font-variant: small-caps;*/
+    ИЛИ    
+    font: italic small-caps 600 40px/20px 'Roboto', sans-serif;-->
+
+    
+
+    
+
+
 
 
 

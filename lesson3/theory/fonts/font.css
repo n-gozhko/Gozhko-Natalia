@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Corinthia-Regular';
+  src: url('Corinthia-Regular.eot');
+  src: url('Corinthia-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Corinthia-Regular.svg#Corinthia-Regular') format('svg'),
+       url('Corinthia-Regular.ttf') format('truetype'),
+       url('Corinthia-Regular.woff') format('woff'),
+       url('Corinthia-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
