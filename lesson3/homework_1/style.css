@@ -1,6 +1,10 @@
 div{
     font-family: 'Lobster', cursive;
+    color: rgb(44, 14, 73);
 }
 /*p{
     font-family: 'Roboto', sans-serif;
 }*/
+*{
+    text-align: center;
+}
