@@ -1,0 +1,16 @@
+.автор{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.дата{
+    color: green;
+}
+.победы{
+    color:red;
+    font-weight: bold;
+}
+.текст{
+    color: blue;
+    font-style: italic;
+}
