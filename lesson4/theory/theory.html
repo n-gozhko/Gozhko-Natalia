@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson4</title>
+</head>
+<body>
+    <h2>Стилевое свойство text-align - горизонтальное выравнивание содержимого.</h2>
+    <ul>
+        <li style="text-align: left;">text-align: left — выравнивание по левой стороне.</li>
+        <li style="text-align: right;">text-align: right — выравнивание по правой стороне.</li>
+        <li style="text-align: center;">text-align: center — выравнивание по центру.</li>
+        <li style="text-align: justify;">text-align: justify — выравнивание по ширине.</li>
+    </ul>
+    <div style="text-align: left; border: solid green 1px;" > 
+        <img src="vorobey.jpg" alt="воробей" title="воробей слева">
+    </div>
+    <div style="text-align: center; border: solid green 1px;">
+        <img src="vorobey.jpg" alt="воробей" title="воробей по центру">
+    </div>
+    <div style="text-align: right; border: solid green 1px;">
+        <img src="vorobey.jpg" alt="воробей" title="воробей справа">
+    </div>
+    <h2>Стилевое свойство vertical-align при применении к <span style="font-style:italic">строчному элементу</span> задаёт его вертикальное 
+        выравнивание внутри строки текста, содержащей его.</h2>
+        <ul>
+            <li>vertical-align: top — выравнивание к верхней стороне контейнера.</li>
+            <li>vertical-align: bottom — выравнивание к нижней стороне контейнера.</li>
+            <li>vertical-align: baseline — выравнивание к базовой линии текста контейнера (если текста нет, базовая линия есть нижняя сторона контейнера).</li>
+            <li>vertical-align: отступ — отступ вверх от базовой линии контейнера.</li>
+        </ul>
+        <div style="background-color: red;  border: solid blue 1px;">
+            <img src="vorobey.jpg" alt="воробай"> Под картинкой и текстом есть базовая линия. Она есть под всеми элементами. Можно 
+            убрать с помощью атрибута aling top
+        </div><br>
+        <div style="border: solid green 1px; font-size: 110px; background-color: red;">
+            <img src="vorobey.jpg" alt="воробей" style="vertical-align: top;">
+            vertical-align: top — выравнивание к верхней стороне контейнера.
+            <img src="vorobey.jpg" alt="воробей" style="vertical-align: top;">
+        </div><br>
+        <div style="border: solid red 1px; font-size: 110px;">
+            <img src="vorobey.jpg" alt="воробей" style="vertical-align: bottom;">
+            vertical-align: bottom — выравнивание к нижней стороне контейнера.
+            <img src="vorobey.jpg" alt="воробей" style="vertical-align: bottom;">
+        </div><br>
+        <div style="border: solid green 1px; font-size: 110px;">
+            <img src="vorobey.jpg" alt="воробей" style="vertical-align: baseline;">
+            vertical-align: baseline — выравнивание к базовой линии текста контейнера (если текста нет, базовая
+            линия есть нижняя сторона контейнера).
+            <img src="vorobey.jpg" alt="воробей" style="vertical-align: baseline;">
+            </div><br>
+        <div style="border: solid red 1px; font-size: 110px;">
+            <img src="vorobey.jpg" alt="воробей" style="vertical-align: 5;">
+            vertical-align: отступ — отступ вверх от базовой линии контейнера.
+            <img src="vorobey.jpg" alt="воробей">
+        </div>
+        <h2>Стилевое свойство white-space — вид обработки пробелов и переносов строк. Заменяет тег pre</h2>
+        <p style="white-space: normal;">white-space: normal — пробелы и переносы строк отображаются обычным образом, то есть:
+        - несколько пробелов в HTML-коде объединяются в один;
+        - переносы строк в HTML-коде аналогичны пробелам и не вызывают перенос строки в отображаемом документе;
+        - автоматический перенос строк (если строка дошла до правого края доступного ей на веб-странице места — 
+        она разрывается там, где покажется браузеру оптимальным, например на месте одного из пробелов или после дефиса).</p>
+        <p style="white-space: pre;">white-space: pre — п
+            робелы и переносы строк отображаются в документе 
+                      точно так как набраны в HTML-коде; автоматического переноса строк не происходит.автоматического переноса строк не происходит.автоматического переноса строк не происходит.автоматического переноса строк не происходит.</p>
+        <p style="white-space: pre-wrap;">white-space: pre-wrap — п
+            робелы и переносы строк отображаются в документе 
+                      точно так как набраны в HTML-коде; автоматический перенос строк происходит.автоматический перенос строк происходит.автоматический перенос строк происходит.автоматический перенос строк происходит.</p>
+        <p style="white-space: nowrap;">white-space: nowrap — запрет переноса строк, т.е. весь текст с таким стилем отобразится в одну строку.т.е. весь текст с таким стилем отобразится в одну строку/т.е. весь текст с таким стилем отобразится в одну строку
+            т.е. весь текст с таким стилем отобразится в одну строкут.е. весь текст с таким стилем отобразится в одну строку/т.е. весь текст с таким стилем отобразится в одну строку
+            т.е. весь текст с таким стилем отобразится в одну строку</p>
+        <p>nowrap можно использовать, когда нельзя разрывать каике-то словосочетания. Например, названия групп: <span style="white-space: nowrap;">"Thirty Second To Marc"</span></p>
+        <h2>Стилевое свойство background-color — цвет фона элемента.</h2>
+        <ul>
+            <li style="background-color: salmon; padding: 20px;">background-color: цвет — явное задание цвета.</li>
+            <li style="background-color: transparent;">background-color: transparent — фон прозрачный. По умолчанию, цвет любого фона - transparent</li>
+        </ul>
+        <h2>Стилевое свойство background-image — изображение на фоне элемента.</h2>
+        <ul>
+            <li>background-image: url("URL") — явное задание URLа изображения для фона.</li>
+            <li>background-image: none — нет изображения на фоне.
+                По умолчанию, изображение фона отсутствует, т.е. background-image: none.</li>
+        </ul>
+        <p style="background-image: url(vorobey.jpg); background-color: violet; color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sint amet voluptate molestiae, quas architecto quod dicta molestias magnam incidunt natus quos at. Fugit quibusdam similique dicta quasi voluptatibus exercitationem?</p>
+        <h2>Стилевое свойство background-repeat — повторение изображения на фоне элемента.
+            Может применяться практически к любому элементу.
+            Имеет смысл, только если свойство background-image задано.</h2>
+            <p style="background-image: url(vorobey.jpg); background-repeat: no-repeat; height: 50px;">background-repeat: no-repeat — не повторять.</p>
+            <p style="background-image: url(vorobey.jpg); background-repeat: repeat-x; height: 100px;">background-repeat: repeat-x — повторять по горизонтали.</p>
+            <p style="background-image: url(vorobey.jpg); background-repeat: repeat-y; height: 100px;">background-repeat: repeat-y — повторять по вертикали.</p>
+            <p style="background-image: url(vorobey.jpg); background-repeat: repeat; height: 100px;">background-repeat: repeat — повторять по вертикали и горизонтали.
+                По умолчанию, повторение задано как repeat, т.е. заданное
+                в background-image изображение заполняет всю площадь фона элемента.</p>
+        <h2>Стилевое свойство background-position — позиция изображения на фоне элемента.
+            Может применяться практически к любому элементу.
+            Имеет смысл, только если свойство background-image задано.</h2>
+            <p>background-position: left top — слева вверху контейнера.</p>
+            <p>background-position: center top — по центру вверху контейнера.</p>
+            <p>background-position: right top — справа вверху контейнера.</p>
+            <p>background-position: left center — слева по центру контейнера.</p>
+            <p>ground-position: center center — по центру контейнера.</p>
+            <p>background-position: right center — справа по центру контейнера.</p>
+            <p>background-position: left bottom — слева внизу контейнера.</p>
+            <p>background-position: center bottom — по центру внизу контейнера.</p>
+            <p>background-position: right bottom — справа внизу контейнера.</p>
+            <p>background-position: размер размер — произвольная абсолютная позиция внутри контейнера.</p>
+            <p>background-position: процент процент — произвольная относительная позиция внутри контейнера.
+            По умолчанию, позиция задана как left top.</p>
+            <p style="background-image: url(vorobey.jpg); 
+                    background-repeat: no-repeat; 
+                    background-position: right center;
+                    height: 100px;
+                    background-color: violet;">Например: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quae doloremque maiores,
+                porro aut vel! Odit excepturi fuga, dolores aliquam quia hic sed ducimus saepe totam consectetur
+                color, culpa accusantium.</p>
+            <p>В случае указания background-position в процентах,
+                указанная процентами точка фонового изображения позиционируется
+                в указанную этими же процентами точку контейнера.
+                <br>
+                Например, если указано background-position: 20% 70%, точка фонового изображения, находящаяся на 20% его ширины и на 70% его высоты, будет спозиционирована
+                в точку контейнера, находящуюся на 20% его ширины и на 70% его высоты. Проще говоря, сначала 
+                находится эта точка на самом блоке, а потом определяется точка на самой картинке. Две точки совмещаются - 
+                и располагается картинка</p>
+                <p style="background-color: coral; 
+                background-image: url(vinni.png) ; 
+                height: 100px;
+                background-repeat: no-repeat;">Если изображение фона имеет прозрачные части, через них будет виден
+                    цвет фона — background-color, если он задан.</p> 
+                <h2>Стилевое свойство background-attachment позволяет задать поведение фона, если содержимое элемента скроллируется.</h2>
+                <p style="background-image: url(vinni.png);
+                height: 700px;
+                background-attachment: scroll;">background-attachment: scroll — фон прокручивается вместе с содержимым элемента.</p>
+                <br><br><br><br><br>
+                <p style="background-image: url(vinni.png);
+                height: 700px;
+                background-attachment:fixed">background-attachment: fixed — фон остаётся на месте, даже если содержимое элемента прокручивается.
+                    Значение по умолчанию — scroll.</p>
+                <br><br>
+        <h2>Резиновый фон -  фон, адаптирующий свои размеры под содержимое контейнера.</h2>
+        <div style="background-image: url(img/two.png); background-repeat: repeat-y;">
+            <div style="background-image: url(img/first.png); background-repeat: no-repeat;">
+                <div style="background-image: url(img/three.png); background-repeat: no-repeat; background-position: left bottom;">
+                    <div style="padding: 70px;">
+                        Женщины!<br>
+                        Мужайтесь!<br>
+                        Мужчины!<br>
+                        Женитесь!<br>
+                        Женщины!<br>
+                        Мужайтесь!<br>
+                        Мужчины!<br>
+                        Женитесь!<br>
+                        Женщины!<br>
+                        Мужайтесь!<br>
+                        Мужчины!<br>
+                        Женитесь!<br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h2>Стилевое свойство overflow — отображение переполнения. </h2>
+            <p>Задаёт способ отображения содержимого 
+            контейнера, если размер контейнера ограничен (например стилевыми свойствами width и/или height), 
+            а содержимое оказывается по размеру больше чем контейнер. Например:<br>
+            <div style="background-color: crimson; width: 100px; height: 100px;">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, illum repellat. Dicta laudantium alias quo quam qui. Ipsam velit veniam voluptas sint quis! Culpa natus, repellendus voluptatibus enim animi ab.
+            </div><br><br><br><br><br><br><br><br><br><br><br><br>
+            Может применяться практически к любому блочному элементу.</p>
+            <ul>
+                <li style="width: 100px; height: 100px; background-color: cyan; overflow: visible;">overflow: visible — содержимое отображается за границами контейнера. Это свойство задается по умолчанию</li><br><br><br><br><br>
+                <li style="width: 100px; height: 100px; background-color:darkgoldenrod; overflow: hidden;"> overflow: hidden — содержимое обрезается границами контейнера.</li><br><br>
+                <li style="width: 100px; height: 100px; background-color:darkmagenta; overflow: scroll;"> overflow: scroll — содержимое обрезается, и в контейнере появляются вертикальная и горизонтальная 
+                    полосы прокрутки для просмотра всего содержимого.</li><br><br><br>
+                <li style="width: 100px; height: 100px; background-color:darkolivegreen; overflow: auto;">overflow: auto — содержимое обрезается, и в контейнере появляются только нужные полосы прокрутки для 
+                    просмотра всего содержимого.</li><br><br>
+                <li style="width: 100px; height: 100px; background-color:beige; overflow-y: hidden; overflow-x: scroll;">В CSS3 также есть стилевые свойства overflow-x и overflow-y, позволяющие задать отображение переполнения раздельно по горизонтали и по вертикали.</li>
+            </ul>
+            <h2>Спрайты - чтобы не вставлять много смайлов, мы вставляем одну картинку, на которой изображены все смайлы и вставляем несколько div, в каждом из которого будет по одному смайлу. </h2>
+            <div style="background-image: url(img/smileys.png); background-repeat: no-repeat; width: 150px; height: 150px; border: solid red 1px">
+            </div><br>
+
+            <div style="border: solid green 1px; width: 150px; height: 150px;">
+            <div style="background-image: url(img/smileys.png); 
+            background-repeat: no-repeat; 
+            width: 25px; height: 25px; 
+            border: solid red 1px; 
+            background-position: 0px 0px;">
+            </div>
+            <div style="padding: 0px 25px; width: 25px; height: 25px;"> 
+            <p style="padding: 0px; margin: 0px; background-image: url(img/smileys.png); 
+            background-repeat: no-repeat; 
+            width: 25px; height: 25px; 
+            border: solid red 1px; 
+            background-position: -25px -25px;"></p>
+            </div>
+            <div style="background-image: url(img/smileys.png); 
+            background-repeat: no-repeat; 
+            width: 25px; height: 25px; 
+            border: solid red 1px; 
+            background-position: 0px -25px;">
+            </div>
+            <div style="background-image: url(img/smileys.png); 
+            background-repeat: no-repeat; 
+            width: 25px; height: 25px; 
+            border: solid red 1px; 
+            background-position: -25px 0px;">
+            </div>
+            <div style="background-image: url(img/smileys.png); 
+            background-repeat: no-repeat; 
+            width: 25px; height: 25px; 
+            border: solid red 1px; 
+            background-position: -25px -50px;">
+            </div>
+            <div style="background-image: url(img/smileys.png); 
+            background-repeat: no-repeat; 
+            width: 25px; height: 25px; 
+            border: solid red 1px; 
+            background-position: -50px -25px;">
+            </div>
+            <div style="padding: 0px 50px; width: 25px; height: 25px;">
+            <p style="padding: 0px; margin: 0px; background-image: url(img/smileys.png); 
+            background-repeat: no-repeat; 
+            width: 25px; height: 25px; 
+            border: solid red 1px; 
+            background-position: -50px -50px;"></p>
+            </div>
+            <div style="background-image: url(img/smileys.png); 
+            background-repeat: no-repeat; 
+            width: 25px; height: 25px; 
+            border: solid red 1px; 
+            background-position: 0px -50px;">
+            </div>
+            <div style="background-image: url(img/smileys.png); 
+            background-repeat: no-repeat; 
+            width: 25px; height: 25px; 
+            border: solid red 1px; 
+            background-position: -50px 0px;">
+            </div>
+            </div><br><br><br><br>
+
+            <h2>Таблицы</h2>
+            <ul>
+                <li>Парный тег table — таблица.</li>
+                <li>Атрибут border тега table — толщина рамок.</li>
+                <li>Парный тег tr внутри тега table — строка таблицы.</li>
+                <li>Парный тег td внутри тега tr — ячейка в строке таблицы.</li>
+                <li>Парный тег th внутри тега tr — ячейка в строке таблицы.</li>
+            </ul>
+            <p>Таблица (table) должна содержать одну или несколько строк (tr).<br>
+            Каждая строка (tr) должна содержать одну или несколько ячеек (td или th).<br>
+            Ячейка th используется для оформления заголовочных ячеек — обычно содержимое такой ячейки выводится жирным шрифтом и выровнено по центру.</p>
+            <br>
+            <table border=1>
+                <tr>
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                </tr>
+                <tr>
+                    <td style="width: 300px;">Строка 1 Столбец 1</td>
+                    <td>Строка 1 Столбец 2</td>
+                </tr>
+                <tr>
+                    <td>Строка 2 Ячейка 1</td>
+                    <td style="background-color:slateblue;">Строка 2 Ячейка 2</td>
+                </tr>
+            </table>
+            <p>Таблица, строка, ячейка могут иметь независимые фоны. Браузер сначала выводит фон всей таблицы (если есть), затем накладывает фоны строк (если есть), затем — фоны ячеек (если есть).</p>
+            <table border="3" 
+            style="background-image: url(vinni.png);">
+                <tr style="height: 100px;">
+                    <th style="width: 300px; text-align:right;">Название<br> цвета</th>
+                    <th>Фон в<br> ячейке</th>
+                </tr>
+                <tr style="background-color:rgba(0, 0, 255, 0.5); height: 100px;">
+                    <td>Синий</td>
+                    <td style="background-image:url(vorobey.jpg)">воробей</td>
+                </tr>
+                <tr style="background-color: rgba(255, 0, 0, 0.5); height: 100px;">
+                    <td>Красный</td>
+                    <td style="background-image: url(vorobey.jpg); background-repeat: no-repeat;">воробей</td>
+                </tr>
+            </table>
+
+            <h2>Таблицы — дополнительные теги и атрибуты тегов</h2>
+            <p>Парный тег caption внутри тега table — заголовок таблицы.<br>
+            Заголовок таблицы будет отображаться над таблицей.</p>
+            <table border=1>
+                <caption>Название таблицы</caption>
+                <tr>
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                </tr>
+                <tr>
+                    <td style="width: 300px;">Строка 1 Столбец 1</td>
+                    <td>Строка 1 Столбец 2</td>
+                </tr>
+                <tr>
+                    <td>Строка 2 Ячейка 1</td>
+                    <td style="background-color:slateblue;">Строка 2 Ячейка 2</td>
+                </tr>
+            </table>
+            <h2>Стилевое свойство caption-side тега caption позволяет установить, сверху или снизу таблицы отображается заголовок.</h2>
+            <ul>
+                <li>caption-side: top (значение по умолчанию) — заголовок таблицы отображается над таблицей.</li>
+                <li>caption-side: bottom — заголовок таблицы отображается под таблицей.</li>
+            </ul>
+            <table border=1>
+                <caption style="caption-side: bottom; text-align: right;">Название таблицы</caption>
+                <tr>
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                </tr>
+                <tr>
+                    <td style="width: 300px;">Строка 1 Столбец 1</td>
+                    <td>Строка 1 Столбец 2</td>
+                </tr>
+                <tr>
+                    <td>Строка 2 Ячейка 1</td>
+                    <td style="background-color:slateblue;">Строка 2 Ячейка 2</td>
+                </tr>
+            </table>
+            <h2>Одиночный тег col внутри тега table — колонка таблицы.</h2>
+            <p>Не отображается.
+            Служит для установки стилевых свойств всему столбцу ячеек таблицы.
+            Поддерживаются только стилевое свойство width и группа стилевых свойств по управлению фоном (background-*).</p>
+            <table border=1>
+                <caption style="caption-side: bottom; text-align: right;">Название таблицы</caption>
+                <col><col style="background-color: yellow">
+                <tr>
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                </tr>
+                <tr>
+                    <td style="width: 300px;">Строка 1 Столбец 1</td>
+                    <td>Строка 1 Столбец 2</td>
+                </tr>
+                <tr>
+                    <td>Строка 2 Ячейка 1</td>
+                    <td style="background-color:slateblue;">Строка 2 Ячейка 2</td>
+                </tr>
+            </table>
+
+            <h2>Другие парные теги таблицы</h2>
+            <p>Парный тег <span style="font-weight: bolder;">colgroup</span> внутри тега table позволяет логически сгруппировать вместе несколько колонок 
+            (тегов col), например, для установки им общих стилевых свойств.</p>
+            <p>Парные теги <span style="font-weight: bolder;">thead, tbody, tfoot</span> внутри тега table позволяют сгруппировать строки таблицы (теги tr), 
+            например, для установки им общих стилевых свойств:</p>
+            <ul>
+                <li>тег thead позволяет выделить строки шапки таблицы; он может встретиться в таблице только один раз; если он есть, до него не должно быть других строк или групп строк;</li>
+                <li>тег tbody позволяет выделить строки тела таблицы; таких тегов внутри одной таблицы может быть несколько;</li>
+                <li>тег tfoot позволяет выделить строки подвала таблицы; он может встретиться в таблице только один раз; строки, входящие в него, будут отображены внизу таблицы, даже если после tfoot есть другие строки или группы строк.</li>
+            </ul>
+            
+            <h2>Управление слиянием рамок таблицы</h2>
+            <p>Стилевое свойство border-collapse тега table — вид слияния рамок таблицы.<br>
+            Устанавливает способ, каким сливаются рамки соседних ячеек таблицы.</p>
+            <ul>
+                <li>border-collapse: collapse — рамки соседних ячеек сливаются вместе.</li>
+                <li>border-collapse: separate — рамки соседних ячеек отображаются отдельно.</li>
+            </ul>
+            <table border=1; style="border-collapse: collapse;">
+                <caption style="caption-side: bottom; text-align: right; ">Название таблицы</caption>
+                <col><col style="background-color: yellow">
+                <tr>
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                </tr>
+                <tr>
+                    <td style="width: 300px;">Строка 1 Столбец 1</td>
+                    <td>Строка 1 Столбец 2</td>
+                </tr>
+                <tr>
+                    <td>Строка 2 Ячейка 1</td>
+                    <td>Строка 2 Ячейка 2</td>
+                </tr>
+            </table>
+
+            <h2> Ширина и высота таблицы и ячеек, строк, столбцов таблицы</h2>
+            <ul>
+                <li>Стилевые свойства <span style="font-weight: bolder;">width, min-width, max-width тега table </span>— управляют шириной таблицы.</li>
+                <li>Стилевые свойства <span style="font-weight: bolder;">height, min-height, max-height тега table</span> — управляют высотой таблицы.</li>
+                <br><li>Стилевые свойства <span style="font-weight: bolder;">width, min-width, max-width тега col </span>— управляют шириной столбца таблицы, а то есть шириной всех ячеек в столбце.</li>
+                <li>Стилевые свойства <span style="font-weight: bolder;">height, min-height, max-height тега tr</span> — управляют высотой строки таблицы, а то есть высотой всех ячеек в столбце.</li>
+                <br><li>Стилевые свойства <span style="font-weight: bolder;">width, min-width, max-width тегов td, th</span> — управляют шириной ячейки таблицы, а то есть могут повлиять на ширину всего столбца.</li>
+                <li>Стилевые свойства <span style="font-weight: bolder;">height, min-height, max-height тегов td, th</span> — управляют высотой ячейки таблицы, а то есть могут повлиять на высоту всей строки.</li>
+            </ul>
+            <p>В любом случае</p>
+            <ul>
+                <li>ширина и высота таблицы будут такими, чтобы вместилось всё её содержимое;</li>
+                <li>ширина столбца таблицы будет такой, чтобы вместилось содержимое всех ячеек столбца;</li>
+                <li>высота строки таблицы будет такой, чтобы вместилось содержимое всех ячеек строки.</li>
+            </ul>
+
+            <h2>Стилевое свойство table-layout тега table — управляет алгоритмом подбора ширины столбцов.</h2>
+            <ul>
+                <li>table-layout: auto — ширина столбцов подбирается автоматически по всему содержимому таблицы.</li>
+                <li>table-layout: fixed — ширина столбцов подбирается автоматически по элементам col (если они есть) или по содержимому ячеек только первой строки таблицы.</li>
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+</body>
+</html>
