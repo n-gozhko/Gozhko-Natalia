@@ -1,0 +1,8 @@
+#image{
+    background: url(img/ramka_1.jpeg) left repeat-y, url(img/ramka_2.jpeg) right repeat-y, url(img/ramka_3.jpeg) top repeat-x, url(img/ramka_4.jpeg) bottom repeat-x, url(img/ramka_5.jpeg) top left no-repeat, url(img/ramka_6.jpeg) left bottom no-repeat, url(img/ramka_7.jpeg) right top no-repeat, url(img/ramka_8.jpeg) right bottom no-repeat;
+}
+
+p{
+    padding: 100px;
+    color: crimson;
+}
