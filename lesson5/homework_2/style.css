@@ -1,0 +1,17 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    
+    color: blue;
+    font-weight: 700;
+    background-color: #9cdae2f8;
+}
+.footer{
+    
+    color: blue;
+    font-weight: 700;
+    background-color: #9cdae2f8;
+    clear: both;
+    text-align: center;
+}
