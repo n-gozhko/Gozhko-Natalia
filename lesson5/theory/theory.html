@@ -2,11 +2,441 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RTEORY</title>
+    <link rel="stylesheet" href="style.css">
+    <title>THEORY</title>
 </head>
 <body>
+    <h1 style="text-align: center;">Обтекание текста</h1>
+    <h2>Стилевое свойство float устанавливает для элемента режим плавающий.</h2>
+    <p>Это стилевое свойство указывает, что элемент является плавающим и прижимается к левой
+    или правой границе своего контейнера. Элементы, идущие в HTML-коде после плавающего 
+    элемента, обтекают плавающий элемент.</p>
+    <ul>
+        <li>float: left — элемент плавающий, прижат влево.</li>
+        <li>float: right — элемент плавающий, прижат вправо.</li>
+        <li>float: none — элемент обычный, не плавающий, по умолчанию.</li>
+    </ul>
+    <div>
+        <img src="img/flower.jpg" style="float: left; padding: 10px;">
+        <p style="background-color:blueviolet;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus.</p>
+    </div><br>
+    <div>
+        <img src="img/flower.jpg" style="float: right; padding: 10px;">
+        <p style="background-color:blueviolet;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus.</p>
+    </div><br>
+    <div>
+        <img src="img/flower.jpg" style="float: none;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus.</p>
+    </div><br>
+    <p>Зафлоченные элементы не обекаются родителем. Тег p в данном случае находится под зафлоченным элементом</p>
+    <p>Если после плавающего элемента в HTML-коде следует ещё один плавающий элемент, второй плавающий элемент обтекает первый плавающий элемент.</p>
+    <div>
+        <img src="img/flower.jpg" style="float: right;">
+        <img src="img/smile.gif" style="float: right;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus.</p>
+    </div><br>
+    <div>
+        <img src="img/flower.jpg" style="float: left;">
+        <img src="img/smile.gif" style="float: left;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus.</p>
+    </div><br>
+    <div>
+        <img src="img/flower.jpg" style="float: left;">
+        <img src="img/smile.gif" style="float: left;">
+        <img src="img/football.jpg" style="float: right;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem ipsum dolor, sit amet 
+        consectetur adipisicing elit. Suscipit earum reprehenderit recusandae! Rerum, perspiciatis.
+        Qui quo animi velit magni. Doloribus blanditiis tempora optio inventore culpa, quae totam at enim dolorem.</p>
+    </div><br>
+    <p>Если несколько обтекаемых элементов расположены подряд, причём второй по высоте больше чем 
+        первый, под первым образуется область, в которую обтекающий текст не попадает.</p>
+    <div>
+        <img src="img/flower.jpg" style="float: left;">
+        <img src="img/smile.gif" style="float: left;">
+        <img src="img/football.jpg" style="float:left;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem, ipsum dolor sit amet 
+        consectetur adipisicing elit. Recusandae reprehenderit deleniti, autem eaque, fuga inventore
+        aspernatur, vitae saepe alias laboriosam tempora amet doloremque. Modi maxime, quam optio nulla hic nobis?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem, ipsum dolor sit amet 
+        consectetur adipisicing elit. Recusandae reprehenderit deleniti, autem eaque, fuga inventore
+        aspernatur, vitae saepe alias laboriosam tempora amet doloremque. Modi maxime, quam optio nulla hic nobis?</p>
+    </div><br>
+    <p>Если несколько обтекаемых элементов расположены подряд и в доступную им ширину не помещаются, невместившиеся 
+        переносятся ниже, по возможности продолжая обтекать более ранние элементы.</p>
+    <div style="width: 340px;">
+        <img src="img/sinatra.jpg" style="float: left;">
+        <img src="img/ball3.png" style="float: left;">
+        <img src="img/flower.jpg" style="float:left;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem, ipsum dolor sit amet 
+        consectetur adipisicing elit. Recusandae reprehenderit deleniti, autem eaque, fuga inventore
+        aspernatur, vitae saepe alias laboriosam tempora amet doloremque. Modi maxime, quam optio nulla hic nobis</p>
+    </div><br>
+    <h2>Стилевое свойство clear отменяет для элемента режим обтекания плавающих элементов.</h2>
+    <p>Это стилевое свойство запрещает данному элементу обтекать плавающие элементы, с одной или двух сторон.
+    Спускает следующий блок до тех пор, пока он не будет соприкасаться с зафлоченным элементом. Т.е. становтся сразу под ним.</p>
+    <ul>
+        <li>clear: left — этот элемент не может обтекать плавающие элементы, расположенные слева.</li>
+        <li>clear: right — этот элемент не может обтекать плавающие элементы, расположенные справа.</li>
+        <li>clear: both — этот элемент не может обтекать плавающие элементы вообще.</li>
+        <li>clear: none — этот элемент может обтекать плавающие элементы с любой стороны.</li>
+    </ul>
+    <div style="background-color: brown;">
+        <img src="img/sinatra.jpg" style="float: left; margin: 0;padding: 0;">
+        <p style="background-color:blueviolet;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus.</p>
+    </div>
+    <div style="margin: 0; padding: 0; background-color: chartreuse; clear: left;">
+        <h3>Hello1</h3>
+    </div>
+    <p>Но в данном случае все равно область div не включает зафлоченный элемент. Для того, чтобы div был на всю длину - нужно сделать распорку.
+        Для этого внутри div прописываем еще один div</p>
+    <div style="background-color: brown;">
+        <img src="img/sinatra.jpg" style="float: left; margin: 0;padding: 0;">
+        <p style="background-color:blueviolet;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. <Br>
+        ЭТО РАСПОРКА. Div включает в себя распорку. Благодаря clear both распорка спускается вниз под зафлоченный элемент и растягивает 
+        родителя. т.е. div. Второй вариант в родителя div добавить overflow: hidden;</p>
+        <div style="height: 13px; background-color: green; clear: both;"></div>
+    </div>
+    <div style="margin: 0; padding: 0; background-color: chartreuse;">
+        <h3>Hello1.</h3>
+    </div>
+    <p>Если у элемента отменено обтекание, то он не обтекает другие элементы, но это не мешает другим элементам обтекать его, если он плавающий.
+    Обтекаемым может быть любой элемент (тег). Для обтекаемых блочных элементов важно явно указывать ширину.</p>
+    <div>
+        <img src="img/sinatra.jpg" style="float: left;">
+        <div style="width: 100px;
+            background-color: yellow;
+            float: left; 
+            clear: both;
+            margin: 10px 20px 10px 10px">
+            покупайте<br>дельфиниум<br>только у нас!
+        </div>
+        <img src="img/flower.jpg" style="float:left; float: left; clear: both;" >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem, ipsum dolor sit amet 
+        consectetur adipisicing elit. Recusandae reprehenderit deleniti, autem eaque, fuga inventore
+        aspernatur, vitae saepe alias laboriosam tempora amet doloremque. Modi maxime, quam optio nulla hic nobis/
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem, ipsum dolor sit amet 
+        consectetur adipisicing elit. Recusandae reprehenderit deleniti, autem eaque, fuga inventore
+        aspernatur, vitae saepe alias laboriosam tempora amet doloremque. Modi maxime, quam optio nulla hic nobis
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem, ipsum dolor sit amet 
+        consectetur adipisicing elit. Recusandae reprehenderit deleniti, autem eaque, fuga inventore
+        aspernatur, vitae saepe alias laboriosam tempora amet doloremque. Modi maxime, quam optio nulla hic nobis
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ipsum. Hic ipsa
+        alias libero accusantium assumenda cum doloremque quod quo quidem reiciendis tempore 
+        veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem, ipsum dolor sit amet 
+        consectetur adipisicing elit. Recusandae reprehenderit deleniti, autem eaque, fuga inventore
+        aspernatur, vitae saepe alias laboriosam tempora amet doloremque. Modi maxime, quam optio nulla hic nobis</p>
+        <div style="clear: both; border: 0;"></div>
+    </div><br>
+    <p>фон, и рамки обтекающих элементов распространяются на площадь, закрытую обтекаемыми элементами.</p>
+    <div>
+        <img src="img/flower.jpg" style="float: left; margin: 10px 20px 10px 20px;">
+        <h3 style="background-color:rgb(43, 214, 226); border-bottom: solid greenyellow 4px;">Overflow</h3>
+        <p style="background-color:blueviolet; margin: 0; padding: 0;">Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Consequatur, ipsum. Hic ipsaalias libero accusantium assumenda cum doloremque 
+        quod quo quidem reiciendis tempore veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Consequatur, ipsum. Hic ipsaalias libero accusantium assumenda cum doloremque 
+        quod quo quidem reiciendis tempore veritatis sed, officia delectus nesciunt saepe! Repellendus.</p>
+    </div><br>
+    <h2>Если установить для обтекающего элемента стилевое свойство overflow: hidden, можно скрыть те части фона
+    и рамок обтекающих элементов, которые закрыты обтекаемыми элементами.</h2>
+    <div>
+        <img src="img/flower.jpg" style="float: left; margin: 10px 20px 10px 20px;">
+        <h3 style="background-color:rgb(43, 214, 226); border-bottom: solid greenyellow 4px; overflow: hidden;">Overflow</h3>
+        <p style="background-color:blueviolet; margin: 0; padding: 0;">Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Consequatur, ipsum. Hic ipsaalias libero accusantium assumenda cum doloremque 
+        quod quo quidem reiciendis tempore veritatis sed, officia delectus nesciunt saepe! Repellendus. Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Consequatur, ipsum. Hic ipsaalias libero accusantium assumenda cum doloremque 
+        quod quo quidem reiciendis tempore veritatis sed, officia delectus nesciunt saepe! Repellendus.</p>
+    </div><br>
+    <p>Внешние поля (margin) и внутренние отступы (padding) обтекающих элементов нахлёстываются на плавающие элементы, насколько возможно.
+    <br>Margin - расстояние между блоками. Padding - расстояние между элементами в блоке.</p><br><br>
+    <h2>Табличная и блочная вёрстка</h2>
+    <p>ТАБЛИЧНАЯ</p>
+    <table border=1 style="border-collapse: collapse; width: 800px; height: 500px; text-align: center;">
+       <tr style="height: 100px; background-color: khaki;">
+           <th colspan="3">Черепашки - лучший сайт интернета!</th>
+       </tr>
+       <tr>
+           <td style="width: 200px; background-color: rgb(140, 225, 240);">МЕНЮ</td>
+           <td style="background-color: rgb(245, 110, 234);">КОНТЕНТ</td>
+           <td style="width: 200px; background-color: rgba(83, 236, 142, 0.562);">БАННЕРЫ</td>
+       </tr>
+       <tr style="height: 100px;">
+           <td colspan="3" style="background-color: rgb(233, 110, 110);">ПОДВАЛ</td>
+       </tr>
+    </table>
+    <p>БЛОЧНАЯ</p>
+    <div style="text-align: center; background-color: khaki; padding: 20px;">Черепашки - лучший сайт интернета!</div>
+    <div style="background-color:rgb(140, 225, 240); float: left; width: 15%;">МЕНЮ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nostrum ut? Vel molestiae .</div>
+        <div style="width: 200px; background-color: rgba(83, 236, 142, 0.562); width: 200px; float: right;">БЕННЕРЫ Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam commodi suscipit, odio possimus consectetur corporis libero eos quas! Porro voluptatem quod, eius minima voluptatibus perferendis praesentium error odio commodi.</div>
+    <div style="background-color: rgb(245, 110, 234); margin-left: 15%; margin-right: 200px;">КОНТЕНТ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum assumenda quaerat natus exercitationem. Aliquam ullam sed, dignissimos <br> perspiciatis laudantium magni autem non natus nulla ad dolor. Eligendi quia maiores incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum aliquid necessitatibus debitis deserunt obcaecati, eligendi id omnis mollitia facere rerum aspernatur tempore, laborum quasi esse pariatur, deleniti officiis blanditiis sint?
+    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nostrum ut? Vel molestiae temporibus culpa a dolorem quo, iusto error porro, officia, beatae asperiores sapiente laborum obcaecati ad ducimus. Reiciendis.
+    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nostrum ut? Vel molestiae temporibus culpa a dolorem quo, iusto error porro, officia, beatae asperiores sapiente laborum obcaecati ad ducimus. Reiciendis.</div>
+    <div style="background-color: rgb(233, 110, 110); clear: both;">ПОДВАЛ
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum dignissimos,<br> eaque perferendis laboriosam quisquam 
+    veniam nobis eligendi inventore, <br>libero soluta corporis. Ipsa ullam animi deserunt officia corrupti cumque. Molestiae?</div>
+    <p> <b>Важно</b>: какие width установлены у div МЕНЮ (15%) и div РЕКЛАМА (200px),<br>
+    такие (или чуть бОльшие) margin должны быть у div КОНТЕНТ (слева 15%, справа 200px).<br>
+    <b>Важно</b>: из трёх центральных div в HTML-коде сначала должны быть записаны 
+    <br>div МЕНЮ и div РЕКЛАМА (в любом порядке), и только после них — div КОНТЕНТ. 
+    <Br>Всегда в HTML-коде сначала идёт обтекаемое содержимое, а затем обтекающее, иначе обтекающее окажется не там где нужно.</p>
     
+    <h2>Столбцы одинаковой высоты в блочной вёрстке</h2>
+    <p>При блочной вёрстке не существует прямого способа добиться одинаковой высоты нескольких столбцов (т.е. элементов div). Каждый элемент div имеет высоту, определяемую его содержимым, и не зависящую от высоты других элементов div.
+    <br>Однако, часто можно сверстать макет так, чтобы визуально столбцы казались имеющими одинаковую высоту.</p>
+
+    <h2>Подход №1. Подготовка специальных фоновых изображений для контейнера</h2>
+    <p>Можно добиться визуально одинаковых столбцов, используя специально подготовленные фоновые изображения, применяемые к контейнеру, в котором 
+    располагаются все столбцы. Т.е. элементы div имеют различную высоту, но не имеют фона; контейнер же как раз имеет такой фон, который совпадает 
+    по размеру и поведению с шириной столбцов, поэтому кажется, что столбец имеет ту же высоту что и контейнер.<br>Блок div с красной рамкой - контейнер</p>
+    <p>Контейнер должен охватывать все колонки. Однако, элемент div охватывает всё своё содержимое,
+    но игнорирует высоту float-элементов. Если блок МЕНЮ или блок БАННЕРЫ окажется длиннее блока КОНТЕНТ, контейнер не сработает так как нам нужно:</p>
+    <div>
+        <div style="border: solid blue 1px; width: 15%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: solid green 1px; width: 200px; float: right;">баннеры баннеры баннеры баннеры баннеры баннеры</div>
+        <div style="border: solid rgb(217, 255, 0) 1px; margin-left: 15%; margin-right: 200px;">контент контент контент контент контент контент контент контент</div>
+    </div><br><br>
+    <p>Чтобы решить эту проблему, в контейнер можно включить ещё один (можно пустой) элемент div, имеющий стилевое свойство clear: both, т.е. гарантированно 
+    не обтекающий ни один float-элемент; он расположится ниже любых float-элементов, и он будет корректно охвачен контейнером:</p>
+    <div>
+        <div style="border: solid blue 1px; width: 15%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: solid green 1px; width: 200px; float: right;">баннеры баннеры баннеры баннеры баннеры баннеры</div>
+        <div style="border: solid rgb(217, 255, 0) 1px; margin-left: 15%; margin-right: 200px;">контент контент контент контент контент контент контент контент</div>
+        <div style="border: solid pink 1px; clear: both;"></div>
+    </div>
+    <p>Опишем фон для правой колонки. Колонка имеет фиксированную ширину — 200px, поэтому, подготовим нужное фоновое изображение ширины 200px и минимальной высоты (wall_g200.png)</p>
+    <div style="background: url(img/wall_g200.png) right top repeat-y">
+        <div style="border: solid blue 1px; width: 15%; float: left;">меню меню меню меню меню меню</div>
+        <div style="width: 200px; float: right;">баннеры баннеры баннеры баннеры баннеры баннеры</div>
+        <div style="border: solid rgb(217, 255, 0) 1px; margin-left: 15%; margin-right: 200px;">контент контент контент контент контент контент контент контент</div>
+        <div style="border: 0; clear: both;"></div>
+    </div>
+    <p>Поскольку мы задали фоновое изображение контейнера, оно повторяется на всю высоту контейнера; поскольку оно имеет ту же ширину и то же 
+    положение что и правая колонка — создаётся впечатление, что колонка БАННЕРЫ имеет ту же высоту что и колонка КОНТЕНТ, а зелёные кирпичи — это фон
+    именно колонки БАННЕРЫ.</p><br>
+    <p> Опишем фон для левой и средней колонки (их можно описать отдельно, но вместе будет короче
+    и проще). Левая колонка имеет резиновую ширину — 15%, поэтому подготовить для неё фоновое изображение так же как для правой колонки не получится.
+    <br>Мы воспользуемся поведением стилевого свойства background-position в случае, когда положение фонового изображения задаётся в процентах.
+    <br>Подготовим широкое (с расчётом на очень широкие экраны) фоновое изображение, 15% ширины которого составляют жёлтые кирпичи, и 85% — голубые (wall_y15b85.png):</p>
+    <img src="img/wall_left.png"> 
+    <p> ширина — 1882px)
+    Если задать это фоновое изображение контейнеру вместе с background-position: 15% top, то граница между жёлтыми и голубыми кирпичами (расположенная на 15% ширины 
+    изображения) попадёт именно на 15% ширины контейнера, то есть, на границу между блоком МЕНЮ и блоком КОНТЕНТ.<br>
+    <br>Обратите внимание, что ширина правой колонки — 200px — в данном случае роли не играет, т.е. неважно, что блок КОНТЕНТ имеет ширину не 85%, а меньше — важно лишь,
+    что граница между блоком МЕНЮ и блоком КОНТЕНТ расположена на 15% ширины всего контейнера.<br>
+    <br><br>Фон для правой колонки временно уберём, чтобы лучше наблюдать происходящее. Итак:</p>
+    <div style="background: url(img/wall_left.png) 15% top repeat-y">
+        <div style="border: solid blue 1px; width: 15%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: 0px; width: 200px; float: right;">баннеры баннеры баннеры баннеры баннеры баннеры</div>
+        <div style="border: solid rgb(217, 255, 0) 1px; margin-left: 15%; margin-right: 200px;">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент</div>
+        <div style="border: 0; clear: both;"></div>
+    </div>
+    <p>Ширина фонового изображения (1882px) значительно больше, чем ширина контейнера (в данном случае менее 700px); фоновое изображение, выходящее за пределы контейнера, не отображается.
+    <br><br>Рамки вокруг блоков МЕНЮ и КОНТЕНТ можно убрать, чтобы лучше наблюдать эффект:</p>
+    <div style="background: url(img/wall_left.png) 15% top repeat-y">
+        <div style="border: 0px; width: 15%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: 0px; width: 200px; float: right;">баннеры баннеры баннеры баннеры баннеры баннеры</div>
+        <div style="border: 0px; margin-left: 17%; margin-right: 210px;">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент</div>
+        <div style="border: 0px; clear: both;"></div>
+    </div>
+    <p>Заданный для блоков МЕНЮ и КОНТЕНТ фон заполнил также и блок БАННЕРЫ, однако, мы можем поверх этого фона расположить уже ранее проработанный фон блока БАННЕРЫ. 
+    <br><br>Так как для описания фона блока БАННЕРЫ нам нужно для контейнера задать стилевое свойство background, а оно уже «занято» фоном для блоков МЕНЮ и КОНТЕНТ,
+    мы должны описать ещё один контейнер (современные браузеры позволяют для одного HTML-элемента задавать сразу несколько фонов). Второй контейнер должен быть внутри 
+    первого контейнера (а не наоборот), т.к. нам нужно чтобы фоновое изображение второго контейнера перекрыло фоновое изображение первого контейнера:</p>
+    <div style="background: url(img/wall_left.png) 15% top repeat-y">
+        <div style="background: url(img/wall_g200.png) right top repeat-y">
+        <div style="border: 0px; width: 15%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: 0px; width: 200px; float: right;">баннеры баннеры баннеры баннеры баннеры баннеры</div>
+        <div style="border: 0px; margin-left: 17%; margin-right: 210px;">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент</div>
+        <div style="border: 0px; clear: both;"></div>
+        </div>
+    </div>
+    <p>Кирпичный фон визуально не имеет начала и конца. Если в качестве фона требуется более сложное изображение, оно при способе «жёлтые и голубые кирпичи» 
+    прижмётся именно к резиновой границе между колонками, поэтому этот способ не подойдёт в случае, если фон с резиновой правой границей необходимо левой гранью 
+    прижать к левой границе колонки, либо если фон с резиновой левой границей необходимо правой гранью прижать к правой границе колонки.
+    <br><br>Более гибкий подход подразумевает раздельную установку фона с двух сторон от резиновой границы между колонками. Суть метода та же — для резиновой границы 
+    используется специально подготовленное фоновое изображение, имеющее переход между двумя видами фона на нужном проценте ширины, но сейчас слева либо справа от границы фон будет прозрачным.</p>
+    <p>Нужно, чтобы левая колонка в фоне имела прижатое к левому нижнему углу изображение черепахи, остальная площадь колонки не должна иметь фона.
+    <br><br>1. Опишем фон для левой колонки. Позиционирование изображения черепахи проблем не вызывает — её нужно просто расположить в левом нижнем углу контейнера:</p>
+    <div style="background:url(img/turtle.jpg) left bottom no-repeat;">
+        <div style="border: solid blue 1px; width: 15%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: solid green 1px; width: 200px; float: right;">баннеры баннеры баннеры баннеры баннеры баннеры</div>
+        <div style="border: solid rgb(217, 255, 0) 1px; margin-left: 15%; margin-right: 200px;">контент контент контент контент контент контент контент контент
+        контент контент контент контент контент контент контент контентконтент контент контент контент контент контент контент контентконтент контент контент контент контент контент контент контент</div>
+        <div style="border: solid pink 1px; clear: both;"></div>
+    </div>
+    <p> 2. Опишем фон для средней колонки.
+    <br>Подготовим широкое (с расчётом на очень широкие экраны) фоновое изображение, 15% ширины которого составляют прозрачные пиксели, и 85% — голубые кирпичи (wall_t15b85.png):(изображение wall_t15b85.png показано в уменьшенном виде, его ширина — 1882px)
+    <img src="img/wall_t15b85.png">
+    <br>Если задать это фоновое изображение контейнеру вместе с background-position: 15% top, то блок КОНТЕНТ получит в качестве фона голубые кирпичи, а блок МЕНЮ — прозрачные пиксели, через которые будет видна уже расположенная там черепаха.
+        Поскольку один контейнер уже имеется (его фон — черепаха), нужно описать ещё один контейнер. Пусть необходимо чтобы при малой ширине окна браузера голубые кирпичи «накрывали» черепаху, тогда второй контейнер должен быть вложен в первый, а не наоборот:</p>
+    <div style="background:url(img/turtle.jpg) left bottom no-repeat;">
+        <div style="background:url(img/wall_t15b85.png) 15% top repeat-y;">
+        <div style="border: solid blue 1px; width: 15%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: solid green 1px; width: 200px; float: right;">баннеры баннеры баннеры баннеры баннеры баннеры</div>
+        <div style="border: solid rgb(217, 255, 0) 1px; margin-left: 15%; margin-right: 200px;">контент контент контент контент контент контент контент контент
+        контент контент контент контент контент контент контент контентконтент контент контент контент контент контент контент контентконтент контент контент контент контент контент контент контент</div>
+        <div style="border: solid pink 1px; clear: both;"></div>
+        </div>
+    </div>
+    <p>Добавим уже известным способом зелёные кирпичи (ещё один контейнер) и уберём рамки:</p>
+    <div style="background:url(img/turtle.jpg) left bottom no-repeat;">
+        <div style="background:url(img/wall_t15b85.png) 15% top repeat-y;">
+        <div style="background:url(img/wall_g200.png) right top repeat-y;">
+        <div style="border: solid blue 1px; width: 15%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: solid green 1px; width: 200px; float: right;">баннеры баннеры баннеры баннеры баннеры баннеры</div>
+        <div style="border: solid rgb(217, 255, 0) 1px; margin-left: 15%; margin-right: 200px;">контент контент контент контент контент контент контент контент
+        контент контент контент контент контент контент контент контентконтент контент контент контент контент контент контент контентконтент контент контент контент контент контент контент контент</div>
+        <div style="border: solid pink 1px; clear: both;"></div>
+        </div></div>
+    </div>
+    <h2>Подход №2. Перекрытие фона контейнера фоном столбца</h2>
+    <p>Можно добиться визуально одинаковых столбцов, применяя фоновое изображение одного из столбцов не к самому столбцу, а к контейнеру, содержащему
+    столбцы; тогда фоновое изображение другого столбца визуально перекрывает часть первого. При этом важно обеспечить, чтобы второй столбец по высоте был не меньше первого.</p>
+    <p>1. Верстаем столбцы без фона. Временно добавляем рамочки, чтобы видеть границы столбцов.</p>
+    <div style="border: solid blue 1px; width: 30%; float: left;">меню меню меню меню меню меню</div>
+    <div style="border: solid green 1px; margin-left: 32%;">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент</div>
+    <p>2. Добавляем контейнер. Помним, что для того чтобы контейнер охватывал и float-элементы тоже, следует добавить в контейнер ещё один div с clear:both.</p>
+    <div>
+        <div style="border: solid blue 1px; width: 30%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: solid green 1px; margin-left: 32%;">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент</div>
+        <div style="border: 0px; clear: both;"></div>
+    </div>
+    <p>3. Применяем к контейнеру то фоновое изображение, которое должно быть у обтекаемого (плавающего) элемента, т.е. того у которого установлено стилевое свойство float.</p>
+    <div style="background: url(img/brick_yellow.png);">
+        <div style="border: solid blue 1px; width: 30%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: solid green 1px; margin-left: 32%;">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент</div>
+        <div style="border: 0px; clear: both;"></div>
+    </div>
+    <p>4. Применяем к обтекающему элементу его фоновое изображение.</p>
+    <div style="background: url(img/brick_yellow.png);">
+        <div style="border: solid blue 1px; width: 30%; float: left;">меню меню меню меню меню меню</div>
+        <div style="border: solid green 1px; margin-left: 32%; background: url(img/brick_blue.png);">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент</div>
+        <div style="border: 0px; clear: both;"></div>
+    </div>
+    <p>Фон контейнера перекрывается голубыми кирпичами справа, но остаётся виден слева, причём даже ниже самого div с меню, и визуально кажется, что слева - фон столбца.
+        Но у этой реализации будут проблемы, если меню окажется длиннее контента:</p>
+    <div style="background: url(img/brick_yellow.png);">
+        <div style="border: solid blue 1px; width: 30%; float: left;">меню меню меню меню меню меню менюменю меню меню меню меню меню</div>
+        <div style="border: solid green 1px; margin-left: 32%; background: url(img/brick_blue.png);">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент</div>
+        <div style="border: 0px; clear: both;"></div>
+    </div>
+    <p>5. Если для какого-либо элемента отменено обтекание (clear), то он не будет обтекать обтекаемые элементы, даже если они принадлежат другим контейнерам. 
+    То есть, если внутри обтекающего текста есть элемент со стилевым свойством clear, то этот элемент опустится ниже до такого места, где уже (с указанной 
+    стороны) не будет обтекаемых элементов, а следовательно, высота обтекающего текста дойдёт минимум до конца обтекаемого (обтекаемых) блоков.</p>
+    <p>В данном случае пустой div с синей рамкой опустился вниз до конца обтекаемого им блока меню.</p>
+    <div style="background: url(img/brick_yellow.png);">
+        <div style="border: solid blue 1px; width: 30%; float: left;">меню меню меню меню меню меню менюменю меню меню меню меню меню</div>
+        <div style="border: solid green 1px; margin-left: 32%; background: url(img/brick_blue.png);">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент
+            <div style="border: solid rgb(255, 174, 0) 1px; clear: both;"></div>
+        </div>
+        <div style="border: 0px; clear: both;"></div>
+    </div>
+    <p>6. Т.к. теперь высота контента не будет меньше высоты меню, то div с clear:both, распирающий контейнер, уже становится ненужным — float-содержимое никак не может «вылезти» за него.Убираем отладочные рамки.</p>
+    <div style="background: url(img/brick_yellow.png);">
+        <div style="border: 0px; width: 30%; float: left;">меню меню меню меню меню меню менюменю меню меню меню меню меню</div>
+        <div style="border: 0px; margin-left: 32%; background: url(img/brick_blue.png);">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент
+            <div style="border: 0px; clear: both;"></div>
+        </div>
+    </div>
+    <p>Данная реализация сработает при любом соотношении высот меню и контента, при любой стороне расположения обтекаемого контента (float:left, float:right), и при любом способе установки размера блока меню — px, em, %, mm..
+    <br>Данный подход применим только для случая, если колонок ровно две.
+    <br>Если колонок больше, в общем случае такой подход не поможет.</p>
+    <br>
+    <h2>Выравнивание блочного содержимого </h2>
+    <p>Чтобы выровнять блочный элемент по центру, использовать text-align нельзя. Можно использовать margin-left auto и margin-right auto</p>
+    <div style="width: 100px; height: 50px; background-color: red; margin-left: auto; margin-right: auto;"></div>
+    <p>установкой элементу стилевого свойства display в значение inline-block, при этом на него начинает действовать стилевое свойство контейнера 
+    text-align (формально, элемент уже при этом не является блочным).</p>
+    <div style="text-align:center">
+        <div style="border: solid blue 1px; display: inline-block;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+    </div>
+    <p>Таблицу, более узкую чем её контейнер, можно выровнять внутри её контейнера по горизонтали несколькими способами:</p>
+    <ul>
+        <li>установкой таблице стилевых свойств margin-left и margin-right в значение auto (центрирование);</li>
+        <li>установкой таблице стилевого свойства display в значение inline-table, при этом на неё начинает действовать стилевое свойство контейнера text-align;</li>
+        <li>установкой таблице HTML-атрибута align равным значению center или right (соответственно центрирование и выравнивание к правому краю).</li>
+    </ul>
+    <p>с помощью display</p>
+    <div>
+        <table border="1" style="border-collapse: collapse; margin-left: auto; margin-right: auto;">
+            <tr>
+                <td>Первый Первый</td>
+                <td>Первый второй</td>
+            </tr>
+            <tr>
+                <td>Второй первый</td>
+                <td>Второй второй</td>
+            </tr>
+            <tr>
+                <td>Третий первый</td>
+                <td>Третий второй</td>
+            </tr>
+        </table>
+    </div>
+    <p>с помощью установки через html align center саму таблицу, а не блок div</p>
+    <div>
+        <table border="1" style="border-collapse: collapse;" align=center>
+            <tr>
+                <td>Первый Первый</td>
+                <td>Первый второй</td>
+            </tr>
+            <tr>
+                <td>Второй первый</td>
+                <td>Второй второй</td>
+            </tr>
+            <tr>
+                <td>Третий первый</td>
+                <td>Третий второй</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <h2>Селектор элементов по классу</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
