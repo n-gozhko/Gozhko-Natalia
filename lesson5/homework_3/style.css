@@ -1,0 +1,14 @@
+.main{
+    
+}
+
+
+.first{
+    background: url(../homework_1/ball1.png) top left no-repeat, url(../homework_1/ball1.png) top right no-repeat, url(../homework_1/ball1.png) bottom left no-repeat, url(../homework_1/ball1.png) bottom right no-repeat;
+}
+.second{
+    background: url(../homework_1/ball1.png) top left no-repeat, url(../homework_1/ball1.png) top right no-repeat, url(../homework_1/ball1.png) bottom left no-repeat, url(../homework_1/ball1.png) bottom right no-repeat;
+}
+.third{
+    background: url(../homework_1/ball1.png) top left no-repeat, url(../homework_1/ball1.png) top right no-repeat, url(../homework_1/ball1.png) bottom left no-repeat, url(../homework_1/ball1.png) bottom right no-repeat;
+}
