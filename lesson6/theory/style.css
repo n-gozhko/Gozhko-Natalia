@@ -1,0 +1,119 @@
+[align="center"] {
+    color: red 
+        }
+
+[href^="http://"] { 
+    font-weight: bold 
+        }
+
+[href$=".gif"] { 
+    color: red 
+}
+
+[href*="queen"] { 
+    color: green 
+}
+h2 {
+    text-align: center;
+}
+p span{
+    color:blue
+}
+p > span {
+    font-size: 20px;
+}
+
+h3 + p {
+    background-color: blueviolet;
+}
+h3+p{
+    background-color: darkred;
+}
+h4+p{
+    background-color: chartreuse;
+}
+h5+p{
+    background-color: darkblue;
+}
+p:first-child { 
+    color: rgb(255, 238, 0) 
+}
+p:first-of-type { 
+    color: rgb(170, 37, 152) 
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    padding: 15px;
+}
+td:first-child {
+    color: rgb(82, 82, 82);
+}
+td:last-child {
+    color: rgb(255, 0, 0);
+}
+td:nth-child(3) {
+    color: rgb(255, 238, 0);
+}
+td:nth-child(even) {
+    font-size: 35px;
+}
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: black;
+}
+tr:nth-child(even) td:nth-child(even) {
+    background-color: black;
+}
+.aaa{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.aaa:hover{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+
+}
+.bbb {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.bbb:active{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+.ccc a:focus{
+    font-size: 100px;   
+    font-style: italic;
+}
+.ccc a:link{
+    color: green;
+}
+.ccc a:visited{
+    color: brown;
+}
+
+.a1 div:not(.info) {
+    color: yellow;
+}
+
+
+
+
+.a2 p::first-line{
+    color: red;
+}
+.a3 p::first-letter{
+    color: blue;
+}
+p span::before {
+    content: "---------";
+}
+p span::after{
+    content: "_________";
+}
+
