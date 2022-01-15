@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Css_chess</title>
+</head>
+<style>
+  table.CHESS
+  {
+    border-collapse: collapse;
+  }
+  table.CHESS td
+  {
+    width: 50px;
+    height: 50px;
+    border: solid gray 1px;
+  }
+  table.CHESS tr:nth-child(even) td:nth-child(odd) {
+    background-color: black;
+  }
+  table.CHESS tr:nth-child(odd) td:nth-child(even) {
+    background-color: black;
+  }
+  table.CHESS tr:first-child td:nth-child(even), tr:first-child
+    {
+      background-color: #90ee90;
+    } 
+  table.CHESS tr:nth-child(even) td:first-child, td:first-child
+    {
+        background-color: #90ee90;
+    }
+  table.CHESS tr:last-child td:nth-child(odd), tr:last-child
+    {   
+        background-color: #90ee90;
+    }
+  table.CHESS tr:nth-child(odd) td:last-child, td:last-child
+    {
+        background-color: #90ee90;
+    }
+   table.CHESS tr:first-child td, tr:last-child td
+   {
+    height: 25px;
+   }
+   table.CHESS tr td:first-child, tr td:last-child
+   {
+    width: 25px;
+   }
+
+
+  
+
+</style>
+
+<body>
+    <p>Создать проект CSS_CHESS. Добавить в него файл CSS_chess.html из библиотеки.
+    <br>В файле CSS_chess.html — HTML-вёрстка простой таблицы 10x10 (левый рисунок).
+    <br>Ничего не меняя в HTML-коде, добавляя только стилевые описания в тег STYLE, привести таблицу к виду, приведённому на правом рисунке.
+    <br>Селекторы псевдоклассов :not, :nth-*(i) и :nth-*(an+b) не использовать.
+    <br>Селекторы псевдоклассов :first-*, :last-*, :nth-*(odd) и :nth-*(even) использовать можно.</p>
+<table class='CHESS'>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+
+</body>
+
+</html>

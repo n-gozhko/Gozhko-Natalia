@@ -1,0 +1,68 @@
+a{
+    display: inline-block;
+}
+a:hover {
+    color: red;
+    }
+div {
+    /*border: solid rgb(38, 0, 255) 1px;*/
+    height: 50px;
+    margin: 15px;
+}
+div a{
+    vertical-align: top;
+    padding-top: 15px;
+}
+.var1 div {
+    display: inline-block;
+    border: solid red 2px;
+    margin: 0px;
+    width: 0px;
+    height: 46px;
+}
+
+.var2 div {
+    display: inline-block;
+    background-color: red;
+    width: 4px;
+    margin: 0px;
+    border: 0px;
+}
+
+.var3 div {
+    display: inline-block;
+    background: url(pic2.jpg);
+    width: 4px;
+    margin: 0px;
+    border: 0px;   
+}
+
+.var5 a {
+    display: inline-block;
+    padding-top: 0px;
+}
+
+.var5 a::after {
+    content: " ";
+    display: block;
+    border: solid white 2px;
+    background-color: red;
+    width: 5px;
+    height: 50px;
+    float: right;
+}
+
+table {
+    margin: 15px;
+    border-collapse: collapse;
+}
+table a{
+    margin: 2px;
+}
+td:nth-child(even) {
+    background-color: red;
+    width: 2px;
+    border: 0px; 
+    height: 48px;
+}
+
