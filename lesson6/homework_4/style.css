@@ -5,9 +5,11 @@
     width: 78px;
     background-image: url(star0.png);
 }
+
 .star:hover{
     background-image: url(star1.png);
 }
+/*
 .star4:hover + .star5{
     background-image: url(star1.png);
 }
@@ -36,5 +38,11 @@
     background-image: url(star1.png);
 }
 .star1:hover + .star2 + .star3 + .star4 + .star5{
+    background-image: url(star1.png);
+}*/
+.stars {
+    float: left;
+}
+.star:hover, .star:hover ~ div{
     background-image: url(star1.png);
 }
