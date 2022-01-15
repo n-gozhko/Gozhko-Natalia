@@ -1,0 +1,40 @@
+
+.star{
+    float: right;
+    height: 78px;
+    width: 78px;
+    background-image: url(star0.png);
+}
+.star:hover{
+    background-image: url(star1.png);
+}
+.star4:hover + .star5{
+    background-image: url(star1.png);
+}
+.star3:hover + .star4{
+    background-image: url(star1.png);
+}
+.star3:hover + .star4 + .star5{
+    background-image: url(star1.png);
+}
+.star2:hover + .star3{
+    background-image: url(star1.png);
+}
+.star2:hover + .star3 + .star4{
+    background-image: url(star1.png);
+}
+.star2:hover + .star3 + .star4 + .star5{
+    background-image: url(star1.png);
+}
+.star1:hover + .star2{
+    background-image: url(star1.png);
+}
+.star1:hover + .star2 + .star3{
+    background-image: url(star1.png);
+}
+.star1:hover + .star2 + .star3 + .star4{
+    background-image: url(star1.png);
+}
+.star1:hover + .star2 + .star3 + .star4 + .star5{
+    background-image: url(star1.png);
+}
