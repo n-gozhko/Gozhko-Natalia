@@ -1,20 +1,39 @@
 *{
     margin: 0px;
 }
+p {
+    background-image: url(extref.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
 .автор{
     font-size: 24px;
     font-weight: bolder;
+    background-image: none;
 }
 
 .дата{
     color: green;
+    background-image: none;
 }
 .победы{
     color:red;
     font-weight: bold;
+    background-image: none;
 }
 .текст{
     color: blue;
     font-style: italic;
+    background-image: none;
+}
+p a{
+    padding: 15px;
+}
+p:last-child{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: none;
+    padding: 0px;
 }
 
