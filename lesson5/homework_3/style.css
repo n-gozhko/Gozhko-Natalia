@@ -1,14 +1,11 @@
 .main{
-    
+    background: url(ball1.png) top left no-repeat, url(ball1.png) bottom left no-repeat, url(ball1.png) bottom right no-repeat, url(ball1.png) top right no-repeat,
+    url(fon22.png) top right no-repeat, url(fon22.png) bottom right no-repeat, url(fon11.png) 20% top no-repeat, url(fon11.png) 20% bottom no-repeat,
+    url(fon2.png) right top repeat-y, url(fon.jpg) 20% top;
+}
+p{
+    padding: 0px;
+    margin: 0px
 }
 
 
-.first{
-    background: url(../homework_1/ball1.png) top left no-repeat, url(../homework_1/ball1.png) top right no-repeat, url(../homework_1/ball1.png) bottom left no-repeat, url(../homework_1/ball1.png) bottom right no-repeat;
-}
-.second{
-    background: url(../homework_1/ball1.png) top left no-repeat, url(../homework_1/ball1.png) top right no-repeat, url(../homework_1/ball1.png) bottom left no-repeat, url(../homework_1/ball1.png) bottom right no-repeat;
-}
-.third{
-    background: url(../homework_1/ball1.png) top left no-repeat, url(../homework_1/ball1.png) top right no-repeat, url(../homework_1/ball1.png) bottom left no-repeat, url(../homework_1/ball1.png) bottom right no-repeat;
-}
