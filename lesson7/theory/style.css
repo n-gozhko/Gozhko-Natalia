@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.p { color: blue; font-style: italic }
+@media print
+{
+    h2 { text-align: center }
+    .p { color: black !important }
+}
