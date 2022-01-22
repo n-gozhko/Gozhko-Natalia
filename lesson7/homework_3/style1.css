@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+}
+.автор{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.дата{
+    color: green;
+}
+.победы{
+    color:red;
+    font-weight: bold;
+}
+.текст{
+    color: blue;
+    font-style: italic;
+}
+a::before{
+    content: url(extref.png);
+}
+[href*=start]::before {
+    content: none;
+}
+p:last-child {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}

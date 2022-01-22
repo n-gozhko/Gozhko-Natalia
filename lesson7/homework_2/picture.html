@@ -2,13 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Picture</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h3>Тег picture</h3>
+        <p>Представляет собой контейнер для хранения нескольких или ноль элементов source, которые поддерживают элемент img и прописываются перед ним. Это позволяет указывать разные 
+        изображения с учётом размера экрана, плотности пикселей, формата изображения и других параметров. Браузер рассмотрит каждый из дочерних элементов source и выберет один, 
+        соответствующий лучшему совпадению; если совпадений среди элементов source найдено не будет, то будет выбран файл, указанный  атрибутом  src элемента img. Затем выбранное 
+        изображение отображается в пространстве, занятом элементом img. Нет совместимости с Internet Explorer</p>
+        <p>Синтаксис:</p>
+       <pre>
+    picture
+        source
+        img
+    /picture
+        </pre>
+    <p>Атрибуты тега source:</p>
+        <ul>
+            <li>Атрибут srcset - список из одной или нескольких строк, разделённых запятыми, определяющий набор возможных изображений, представленных для отображения в браузере.  </li>
+            <li>Атрибут media - позволяет определить медиавыражение (высота, ширина и т.д.), которое веб-браузер будет анализировать для выбора элемента source.</li>
+            <li>Атрибут type - позволяет вам обозначить MIME-тип данных, указанных в атрибуте srcset элемента source. Если браузер не поддерживает данный тип, то элемент source опускается.</li>
+            <li>Атрибут src - указывает URL адрес медиа-файла.</li>
+            <li>Атрибут sizes задаёт пространство, которое изображение будет занимать на экране. Например sizes="(min-width: 1280px) 1200px," - изображение займёт до 1200px, если минимальная ширина экрана равна 1280px.</li>
+        </ul>
+        
+    <p>Пример с изменением размера изображения</p>    
     <picture>
-        <p></p>
-        <source srcset="../../lesson6/homework_4/star0.png" media="(min-width:600px)">
-        <img src="../../lesson6/homework_4/star1.png" width="1000px">
+        <source srcset="sizesmallpic2.jpg" media="(max-width: 900px)">        
+        <source srcset="sizesmallpic.jpg" media="(max-width: 1400px)">
+        <img src="goodpic.jpg" alt="goodpic" title="goodpic">
     </picture>
+
+    <p>Пример с изменением качества изображения</p>
+    <picture>
+        <source srcset="badpic2.jpg" media="(max-width: 600px)" >
+        <source srcset="badpic.jpg" media="(max-width: 1000px)">
+        <img src="goodpic.jpg" width="1920px" height="1000px" alt="goodpic" title="goodpic">
+    </picture>
+
+
 </body>
 </html>

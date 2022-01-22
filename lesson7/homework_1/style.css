@@ -1,0 +1,82 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    color: blue;
+    font-weight: 700;
+    background-color: #9cdae2f8;
+    text-align: center; 
+    margin: 0px; 
+    padding: 15px;
+}
+.footer{   
+    color: blue;
+    font-weight: 700;
+    background-color: #9cdae2f8;
+    clear: both;
+    text-align: center;
+    margin: 0px; 
+    padding: 20px;
+}
+.container{
+    background-image: url(../../lesson5/homework_2/fon_4.jpg); 
+    background-position: left;
+    background-repeat: repeat-y;
+}
+.ball{
+    background-image: url(../../lesson5/homework_1/ball1.png); 
+    background-position: right; 
+    background-repeat: repeat-y; 
+    background-size: 6%;
+}
+.menu{
+    float: left; 
+    padding: 15px; 
+    width: 200px;
+}
+.menu p{
+    text-align: left; 
+    font-weight: 700; 
+    margin: 0; 
+    padding: 0;
+}
+.menu ul{
+    text-align: left;
+    padding: 0px; 
+    margin: 15px; 
+    list-style-type: square;
+}
+.content{
+    margin-left: 210px; 
+    padding: 15px; 
+    background-color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 730px){
+   
+    .menu {
+        float: none;
+        width: 100%;
+        background-image: url(../../lesson5/homework_2/fon_4.jpg); background-position: left; background-repeat: repeat;
+    }
+    .menu p, ul {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 40% !important;
+        padding-right: 40% !important;
+    }
+
+    .content{
+        margin-left: 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .header, .footer {
+        width: 100%;
+        padding: 15px;
+    } 
+    .container {
+            background-image: url(../../lesson5/homework_1/ball1.png); background-position: right; background-repeat: repeat-y; background-size: 6%;
+    }
+}
+
+
