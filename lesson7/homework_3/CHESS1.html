@@ -7,14 +7,12 @@
     <style>
         @media print
         {
-
-            [href] {display: none;
+            p a::before {content: "Ссылка ";
             }
-            a::after{
-                content: (dghjklfghjklgvhbjnkmlcvbnm,cvhbjnkm,dk);
-                visibility:visible !important;
-
+            p a::after{
+                content: " на " attr(href)" ";
             }
+
         }
     </style>
 </head>
