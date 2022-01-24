@@ -2,12 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <title>Home_add</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        
+    <h1>Заполните форму</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset>
+        <legend>Личные данные</legend>
+        <input type="text" name="lasrname" placeholder="Фамилия" maxlength="25" autofocus> text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле<br>
+        <input type="text" name="firstname" placeholder="Имя" maxlength="20"> text: Только кириллица, без пробелов, длина поля 20, обязательное поле<br>
+        <input type="text" name="patronymic" placeholder="Отчество" maxlength="24"> text: Только кириллица, без пробелов, длина поля 24, обязательное поле<br>
+            <fieldset>
+                <legend>Паспортные данные</legend>
+                text: Серия - только заглавные две латинские буквы с длиной 2 и максимальным количеством символов 2, количество букв не менее 2, обязательное поле.
+                <br>text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество цифр не менее 7, обязательно поле.
+                <br><input type="text" name="seria" value="AA" maxlength="2" size="1">
+                <input type="text" name="nomer" value="1234567" maxlength="7" size="5">
+            </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <input type="text" name="year" maxlength="4" value="2000"> text: Год рождения 4-е цифры
+                <br><select name="month">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+                </select> select: Месяц рождения
+                <br><input type="number" name="day" maxlength="2" max="31"> number: Диапазон от 1 до 31 с шагом 1 
+            </fieldset>
+            <select name="country">
+                <option value="1">РБ</option>
+                <option value="2">РФ</option>
+                <option value="3">Украина</option>
+                <option value="4">Польша</option>
+            </select>(Национальность - выбор одного значения из списка, обязательное поле)
+            <br>Адрес:
+            <br><textarea name="address"></textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend>Интересы</legend>
+            <fieldset>
+                <legend>array: Хобби</legend>
+                <label><input type="checkbox" name="hobby[]" value="rib">Рыбалка</label>
+                <br><label><input type="checkbox" name="hobby[]" value="astr">Астрономия</label>
+                <br><label><input type="checkbox" name="hobby[]" value="daiv">Дайвинг</label>
+                <br><label><input type="checkbox" name="hobby[]" value="marki">Марки</label>
+            </fieldset>
+            <fieldset>
+                <legend>Домашние животные (возможность выбора нескольких вариантов):</legend>
+                <select name="animal[]" multiple size="12">
+                    <optgroup label="Попугаи">
+                    <option value="pop1">Волнистый</option>
+                    <option value="pop2">Ара</option>
+                    <option value="pop3">Неразлучник</option>
+                    </optgroup>
+                    <optgroup label="Рыба">
+                        <option value="r1">Караси</option>
+                        <option value="r2">Окуни</option>
+                        <option value="r3">Осетр</option>
+                    </optgroup>
+                    <optgroup label="Птицы">
+                        <option value="pt1">Стая ворон</option>
+                        <option value="pt2">Аист</option>
+                        <option value="pt3">Археоптерикс</option>
+                    </optgroup>
+                </select>
+
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+            <input type="text" name="login" placeholder="Логин" maxlength="20"> text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле
+            <br><input type="password" name="password" placeholder="Пароль" maxlength="20"> password: Только латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить
+        </fieldset>
+        <fieldset>
+            <legend>Координаты</legend>
+            <input type="email" name="email" placeholder="введите адрес почты"> email: проверка должна осуществляться при помощи новых атрибутов тега input
+            <br><input type="url" name="url" placeholder="введите адрес сайта"> email: проверка должна осуществляться при помощи новых атрибутов тега input
+        </fieldset>
+        <fieldset>
+            <legend>Цифры</legend>
+            <input type="number" name="number2"> number: Диапазон от -2,5 до 2,5 с шагом 0,1
+            <br><input type="range" name="range">
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки управления</legend>
+            <input type="submit">
+            <input type="reset"><br>
+            <button>
+                <img src="smile.png" alt="pic">
+            </button>
+            <!--Либо второй вариант: прописать input type button, поставить ему класс ааа, в этом классе задать
+            background изображение, no-repeat, center. Также задать ширину и высоту кнопки-->
+        </fieldset>
+   
     </form>
     
 </body>
