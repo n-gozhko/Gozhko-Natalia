@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primer1</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+    height: 10000px;
+    background-image: url(../../lesson7/homework_2/goodpic.jpg);
+    } 
+    .first{
+        width: 50px;
+        height: 50px;
+        background-color: red;
+    }
+    .second{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+    }
+    .third{
+        width: 50px;
+        height: 50px;
+        background-color: green;
+    }
+    .parent{
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin: 100px auto;
+        padding: 1px;
+    }
+    .parent > div{
+        width: 400px;
+        height: 250px;
+        background-color: rgb(255, 0, 179);
+        margin: 20px auto;
+        padding: 1px;
+    }
+    .parent > div > div{
+        width: 300px;
+        height: 200px;
+        background-color: rgb(163, 255, 247);
+        margin: 20px auto;
+        padding: 1px;
+    }
+    .header{
+        height: 50px;
+        background-color: thistle;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .header ul{
+        width: 500px;
+        margin: 0 auto;
+    }
+    .header ul li{
+        display: inline-block;
+    }
+
+    
+</style>
+
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+        </ul>
+    </div>
+<div class="parent">
+        <div>
+            <div>
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+</body>
+</html>
