@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MAKET_FORM</title>
+</head>
+<body>
+    <!--<pre>Сверстать проект MAKET_FORM.
+
+        И в широком, и в узком варианте расстояние между левым краем текстовых полей и левым краем окна браузера должно оставаться постоянным; расстояние между правым краем текстовых полей и правым краем окна браузера должно оставаться постоянным. Резинится только ширина текстовых полей.
+        
+        Вёрстка блочная, адаптивная, резиновая. Не использовать таблицы, позиционирование (position), flex/grid, CSS-функцию calc (даже если умеете).
+        
+        Макеты для широкого и для узкого окна приложены. Красная двойная рамка на макетах символизирует размер окна браузера (она показана только для ориентировки, её верстать не надо).
+        Количество и положение точек перехода определить самостоятельно.</pre>-->
+    <div class="container">
+        <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <div>
+            <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+            <span>Название статьи:</span>
+            <input class="name" type="text" name="name">
+        </div>
+
+        <div> 
+            <span>Рубрика:</span>
+            
+            <select name="rubrika">
+                <option value="1">компьютерная техника</option>
+                <option value="2">графика и дизайн</option>
+                <option value="3">программирование</option>
+            </select>
+        
+        </div>
+
+        <div>
+            <span>Публикация:</span>
+            <label><input type="radio" name="publication" >на сайте</label>
+            <label><input type="radio" name="publication" >в журнале</label>
+            <label><input type="radio" name="publication" >на сайте и в журнале</label>
+        </div>
+
+        <div>
+            <span>Разрешить комментарии:</span>
+            <input type="checkbox" name="comment" checked>
+        </div>
+
+        <div class="textarea">
+            <span>Текст статьи:</span><br>
+            <textarea name="text"></textarea><br>
+            <input type="submit" value="Опубликовать">
+        </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    border: solid red 1px;
+    padding: 15px;
+    width: 97%;
+}
+div {
+    margin-top: 5px;
+}
+span {
+    display: inline-block;
+    width: 190px;
+}
+.name {
+    width: 86%;
+}
+label {
+    cursor: pointer;
+}
+textarea {
+    width: 99%;
+}
+p {
+    margin-top: 0px;
+}
+
+
+@media all and (max-width: 1474px) {
+    .name{
+        width: 83%;
+    }
+}
+@media all and (max-width: 1216px) {
+    .name{
+        width: 80%;
+    }
+}
+@media all and (max-width: 1036px) {
+    .name{
+        width: 77%;
+    }
+}
+@media all and (max-width: 903px) {
+    .name{
+        width: 74%;
+    }
+}
+@media all and (max-width: 800px) {
+    .container{
+        width: 96%
+    }
+    textarea{
+        width: 74%;
+    }
+    select{
+        display: block;
+        width: 74%;
+        margin-top: 4px;
+    }
+    label{
+        display: block;
+    }
+}
