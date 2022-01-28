@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAKET_ABS</title>
+</head>
+<style>
+    .container{
+        width: 500px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        border: solid red 1px;
+    }
+    img{
+        display: block;
+    }
+    .biohazard{
+        position: absolute;
+        top: 70px;
+        left: 50px;
+    }
+    .Man-and-woman{
+        position: absolute;
+        right: 50px;
+        top: 40px;
+    }
+    .Yin_and_Yang{
+        position: absolute;
+        right: 150px;
+        bottom: 40px;
+    }
+    [src^="img/No"]{
+        position: absolute;
+        top: 122px;
+        left: 122px;
+    }
+    .biohazard2{
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        display: none;
+    }
+    .Man-and-woman2{
+        position: absolute;
+        top: 135px;
+        left: 145px;
+        display: none;
+    }
+    .Yin_and_Yang2{
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        display: none;
+    }
+    div:hover .Man-and-woman{
+       display: none!important;
+            }
+    .container:hover .Man-and-woman2{
+       display: block!important;
+            }
+           
+
+
+
+</style>
+<body>
+    <!--
+    <pre>
+Создать проект MAKET_ABS. Добавить из библиотеки изображения biohazard.png, Man-and-woman.png, No_smoking.png, Yin_and_Yang.png.
+Сверстать проект по макету.
+При поднесении мыши к изображениям заднего плана (biohazard.png, Man-and-woman.png, Yin_and_Yang.png), они должны становиться ближе к пользователю
+чем изображение переднего плана (No_smoking.png), т.е. всплывать на передний план.
+До изображений — произвольный многострочный текст на всю ширину окна браузера; изображения находятся посередине ширины окна браузера и примыкают к
+тексту снизу, т.е. когда при сужении окна браузера высота текста автоматически увеличивается, изображения должны смещаться вниз, оставаясь 
+отцентрованными. Сразу после блока изображений — ещё один абзац произвольного многострочного текста.
+Изображения должны быть размещены с использованием абсолютного позиционирования (position: absolute), координаты изображений должны быть заданы в
+пикселях.
+    </pre>-->
+
+<p>Я к вам пишу — чего же боле? Что я могу еще сказать? Теперь, я знаю, в вашей воле Меня презреньем наказать. Но вы, к моей несчастной доле Хоть каплю жалости храня, Вы не оставите меня. Сначала я молчать хотела; Поверьте: моего стыда Вы не узнали б никогда, Когда б надежду я имела Хоть редко, хоть в неделю раз В деревне нашей видеть вас. Я к вам пишу — чего же боле? Что я могу еще сказать? Теперь, я знаю, в вашей воле Меня презреньем наказать. Но вы, к моей несчастной доле Хоть каплю жалости храня, Вы не оставите меня. Сначала я молчать хотела; Поверьте: моего стыда Вы не узнали б никогда, Когда б надежду я имела Хоть редко, хоть в неделю раз В деревне нашей видеть вас.</p>
+<div class="container">
+    <div class="biohazard">
+        <img src="img/biohazard.png" alt="biohazard">
+    </div>
+    <div class="Man-and-woman">
+        <img class="ing" src="img/Man-and-woman.png" alt="Man-and-woman">
+    </div>
+    <div class="Yin_and_Yang" >
+        <img src="img/Yin_and_Yang.png" alt="Yin_and_Yang">
+    </div>
+    <div class="No_smoking" >
+        <img src="img/No_smoking.png" alt="No_smoking">
+    </div>
+    <div class="biohazard2">
+        <img class="img" src="img/biohazard.png" alt="biohazard">
+    </div>
+    <div class="Man-and-woman2">
+        <img src="img/Man-and-woman.png" alt="Man-and-woman">
+    </div>
+    <div class="Yin_and_Yang2" >
+        <img src="img/Yin_and_Yang.png" alt="Yin_and_Yang">
+    </div>
+
+    
+</div>
+<p>Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи. Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи. Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи. Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи. Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи. Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи. </p>
+    
+
+
+</body>
+</html>
