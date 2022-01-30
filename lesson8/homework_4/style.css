@@ -1,0 +1,118 @@
+.container{
+    text-align: center;
+    border: solid red 1px;
+}
+span, label{
+    cursor: pointer; 
+}
+p{
+    margin: 0; 
+    padding: 0;
+}
+.smiles{
+    /*border: solid blue 1px;*/
+    height: 100px;
+    padding-top: 50px;
+}
+.smile{
+    visibility: hidden;
+}
+.smile::before{
+    visibility: visible;
+    content: url(smile2_big.gif);
+    position: relative;
+    top: -2.5em;
+    right: 3.5em;
+}
+.smile + span{
+    color: blue;
+    font-size: 50px;
+}
+.smile:checked + span{
+    color: red;
+    font-size: 15px;
+}
+.smile:checked::before{
+    content: url(smile1_big.gif);
+}
+.smile:checked:hover + span{
+    font-size: 50px;
+}
+
+
+.poem{
+    width: 300px;
+    border: solid green 1px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.more + label + .container2{
+    display: none;
+}
+.more:checked + label + .container2{
+    display: block!important;
+}
+.more2{
+    display: none;
+}
+.more2 + label + div{
+    display: none;
+}
+.more2:checked + label + div{
+    display: block;
+}
+.more2 + label {
+    text-decoration: underline;
+}
+.more2:checked + label{
+    display: none;
+}
+.stl3 + input + label{
+    display: none;
+}
+.more2:checked + label + div + input + label{
+    display: block;
+}
+
+
+.poem2{
+    width: 300px;
+    border: solid rgb(146, 0, 204) 1px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+
+}
+.first + label + div, .first{
+    display: none;
+}
+.first + label{
+    float:left;
+    display: block;
+    background-color: rgb(207, 62, 62);
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.first:checked + label{
+    background-color:rgb(247, 206, 206);
+}
+.first:checked + label + div{
+    display: block;
+    background-color:rgb(247, 206, 206);
+    border-radius: 10px;
+    position: absolute;
+    left: 25px;
+    top: 2.4em;    
+    padding: 5px;
+}
+
+
+
+
