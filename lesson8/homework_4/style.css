@@ -86,7 +86,7 @@ p{
     padding: 10px;
     margin-top: 10px;
     position: relative;
-
+    height: 150px;
 }
 .first + label + div, .first{
     display: none;
