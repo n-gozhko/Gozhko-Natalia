@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPRITES</title>
+</head>
+<style>
+    @keyframes cat{
+        from{background: url(cat2_12.jpg) 0 0;}
+        to{background: url(cat2_12.jpg) -1974px 0;} 
+    }
+    .cat{
+        width: 160px;
+        height: 100px;
+        animation: cat 2s steps(12) infinite;
+    }
+    /*@keyframes cat{
+        from{background: url(cat2_2.jpg) 0 0;}
+        to{background: url(cat2_2.jpg) -990px 0;}
+    }
+    @keyframes cat{
+        from{background: url(cat2_2.jpg) 0 100px;}
+        to{background: url(cat2_2.jpg) -990px 100px;} 
+    }
+    .cat{
+        width: 160px;
+        height: 100px;
+        animation: cat 2s steps(6) infinite;
+    }*/
+</style>
+<body>
+    <div class="cat"></div>
+    
+</body>
+</html>
