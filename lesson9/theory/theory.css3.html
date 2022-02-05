@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css3</title>
+    <style>
+        h1,h2,h3{
+            text-align: center;
+        }
+        .one{
+            border: solid red 1px;
+            text-align: center;
+            margin: 10px;
+            border-top-left-radius: 20px;
+            font-size: 30px;
+            width: 300px;
+            float: left;
+        }
+        .two{
+            border: solid red 1px;
+            text-align: center;
+            margin: 10px;
+            border-top-left-radius: 40px 20px;
+            border-bottom-right-radius: 10px 50px;
+            font-size: 30px;
+            width: 300px;
+            float: left;
+        }
+        .three{
+            border: solid red 1px;
+            text-align: center;
+            margin: 10px;
+            border-radius: 20px;
+            font-size: 30px;
+            width: 300px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Возможности CSS3</h1>
+    <h3>Некоторые возможности CSS3 — скруглённые углы</h3>
+    <p>CSS3 может делать скругленные углы c помощью border-radius. Можно скруглять только один угол, или все месте причем задвать
+    разный радиус угла при необходимости.
+    </p>
+    <div>
+    <div class="one">
+        CSS3 умеет делать скруглённые углы
+    </div>
+    <div class="two">
+        CSS3 умеет делать скруглённые углы
+    </div>
+    <div class="three">
+        CSS3 умеет делать скруглённые углы
+    </div>
+    <div style="clear:both"></div>
+    </div>
+
+
+
+    <h3>Тени текста</h3>
+    <p>Задаем text-shadow:, сначала координаты по x, потом по y. Также можем прописать цвет тени. Третий показатель - размытие.</p>
+    <p>Поддержка: Chrome, Firefox, Opera, IE 10+ </p>
+    <p style="text-align: left; font-size: 30px; text-shadow: 9px 9px;">CSS3 умеет создавать тень для букв</p>
+    <p style="text-align: left; font-size: 30px; text-shadow: 9px 9px lightsalmon;">CSS3 умеет создавать тень для букв</p>
+
+
+
+    <h3>Тени фона</h3>
+    <p>Принцип написание такой же. Задаем box-shadow, смещение по x, смещение по y, размытие, если нужно и цвет </p>
+    <p>При скругленных углах, скругляется и сама тень</p>
+    <p>Можно также сделать тень с расширением, т.е. вокруг элемент. Для этого смещение по x и y прописываем 0 (пример 3)</p>
+    <p>Можно сделать тень внутри элемента. Для этого добавляем в box-shadow inset Пример 4</p>
+    <div style="overflow: hidden;">
+    <p style="font-size: 30px; text-align: center; padding: 5px; background-color: yellow; width: 500px; float: left; margin: 10px; box-shadow: 9px 9px 4px red;">CSS3 умеет создавать тень для рамки</p>
+    <p style="font-size: 30px; text-align: center; padding: 5px; background-color: yellow; width: 500px; float: left; margin: 10px; box-shadow: 9px 9px 4px red; border-radius: 20px;">CSS3 умеет создавать тень для рамки</p>
+    <p style="font-size: 30px; text-align: center; padding: 5px; background-color: yellow; width: 500px; float: left; margin: 10px; box-shadow: 0px 0px 20px red; border-radius: 10px;">CSS3 умеет создавать тень для рамки</p>
+    <p style="font-size: 30px; text-align: center; padding: 5px; background-color: yellow; width: 500px; float: left; margin: 10px; box-shadow: 0px 0px 10px red inset; border-radius: 10px;">CSS3 умеет создавать тень для рамки</p>
+    </div>
+    <p>Поддержка: Chrome 10+, Firefox 4+, Opera 10.5+, IE 9+</p>
+    <p>Это все можно задавать автоматически через Text Shadow Css - в гугле</p>
+    
+
+
+    <h3>Колонки</h3>
+    <p>Column-count - задает количество колонок.
+    <br>Column-gap - расстояние между колонками. 
+    <br>column-rule - задать разделитель (черту) между колонками. Аналогичен border </p>
+    <p>Поддержка: Chrome (с префиксом), Chrome 50+, Firefox (с префиксом), Firefox 52+, Opera 11.1+, IE 10+</p>
+    <p style="text-align: justify; column-count: 3; column-gap: 10px; column-rule: dotted red 2px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nostrum at saepe excepturi sed? Perferendis magnam laudantium ratione inventore laboriosam in culpa similique non at magni soluta, neque rerum autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quibusdam corrupti ut vel temporibus autem error facere qui, suscipit et molestiae vero, eum dolorum expedita vitae accusamus eveniet delectus officia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem cumque sint unde provident velit nulla impedit blanditiis aliquid. Repellendus vitae quidem et amet mollitia doloremque inventore ratione molestiae incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque debitis aperiam ab perferendis, repudiandae accusantium necessitatibus, optio quam id deserunt nam esse tempore voluptatibus? Cupiditate laboriosam hic quo nostrum dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at voluptatum nobis repudiandae iure nihil in, odio dolorum illo exercitationem aspernatur cupiditate libero deleniti pariatur dicta facilis voluptatibus cumque id?</p>
+
+
+
+    <h3>Линейные градиенты</h3>
+    <div style="overflow: hidden;">
+    <p>Задаем с помощью стилевого свойства background-image, в котором прописываем linear-gradient, в скобках указываем: deg - направление градиента (градус наклона), и указываем два цвета (первый цвет будет ниже). Чем больше процент цвета, тем меньше егое видно  </p>
+    <div style="overflow: hidden;">
+    <p style="float: left; margin: 15px; width: 500px; font-size: 30px; text-align: center; background-image: linear-gradient(0deg, red, yellow);">CSS3 умеет использовать в качестве фона линейную градиентную заливку</p>
+    <p style="float: left; margin: 15px; width: 500px; font-size: 30px; text-align: center; background-image: linear-gradient(20deg, red, yellow, white 70%);">CSS3 умеет использовать в качестве фона линейную градиентную заливку</p>
+    <p style="font-size: 15px; height: 133px; width: 200px; color: white; float:left; margin: 10px;  background-image: linear-gradient(50deg, rgb(0,0,0,0), red), url(../../lesson5/homework_1/football.jpg);">Градиент может быть от прозрачного к цвету, на заднем фоне задана картинка</p>
+    <p>Ступенчатый цвет. В этом случае задаем процент, который занимать будет градиент. Для размытия - указываем процент между переходом цветов меньше. Если мы хотим, чтобы фон повторялся через определенную ширина, устанавливаем
+    background-size размер в пикселях и 100%.
+    <br> Соответственно, как и любого лругого фона можем убрать повторение. Background-repeat:no-repeat
+    </p>
+    <p style="float: left; font-size: 30px; padding: 10px; margin: 10px; background-image: linear-gradient(90deg, yellow, yellow 30%, red 30%, red 60%, blue 80%, blue);">В линейном градиенте<br>переходы могут быть очень резки,<br>получаются ступеньки</p>
+    <p style="float: left; font-size: 30px; padding: 10px; margin: 10px; background-image: linear-gradient(90deg, yellow, yellow 30%, red 30%, red 60%, blue 80%, blue); background-size: 100px 100%;">В линейном градиенте<br>переходы могут быть очень резки,<br>получаются ступеньки</p>
+    <p style="float: left; font-size: 30px; padding: 10px; margin: 10px; background-image: linear-gradient(90deg, yellow, yellow 30%, red 30%, red 60%, blue 80%, blue); background-size: 100px 100%; background-repeat: no-repeat; border: solid black 1px;">В линейном градиенте<br>переходы могут быть очень резки,<br>получаются ступеньки</p>
+    </div>
+    <p>Поддержка: Chrome 26+, Firefox 16+, Opera 12.1+, IE 10+</p>
+    <p>Примеры классных фонов, выполненных с помощью градиента: https://projects.verou.me/css3patterns/ </p>
+    <p style="width: 900px; height: 300px; font-size: 50px; color: white; margin: 10px; text-align: center; padding-top: 20px;
+    background-color: silver;
+    background-image: linear-gradient(335deg, #b00 23px, transparent 23px),
+    linear-gradient(155deg, #d00 23px, transparent 23px),
+    linear-gradient(335deg, #b00 23px, transparent 23px),
+    linear-gradient(155deg, #d00 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;">Например вот такой фон</p>
+
+
+    <h3>радиальные градиенты</h3>
+    <div style="overflow: hidden;">
+    <p>Для этого мы в bockground-image задаем radial-gradient. Начинается градиент из центра. Т.е. первый цвет будет в центре</p>
+    <p style="width: 500px; font-size: 30px; float: left; margin: 10px; padding: 10px; background-image: radial-gradient(yellow, red);">CSS3 умеет использовать в качестве фона радиальную градиентную заливку</p>
+    <p style="width: 500px; font-size: 30px; float: left; margin: 10px; padding: 10px; background-image: radial-gradient(circle at 35% top, yellow, white 55%, red);">CSS3 умеет использовать в качестве фона радиальную градиентную заливку</p>
+     </div>
+    <p>Поддержка: Chrome 26+, Firefox 16+, Opera 12.1+, IE 10+</p>
+   
+
+
+    <h3>Поворот</h3>
+    <div style="overflow: hidden;">
+    <p>Поворот можно сделать с помощью стилевого свойства transform: rotate. Положительный градус - по часовой стрелке. Отрицательный - проти часовой.
+    <br>Можем также задавать, чтобы элемент крутился вокруг чего-то, а не своего центра. Через свойство tranform-origin: и задаем точку
+    </p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; transform: rotate(5deg)">CSS3 умеет поворачивать</p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; transform: rotate(5deg); transform-origin: right top;">CSS3 умеет поворачивать</p>
+    </div>
+    <p>Поддержка: Chrome 36+, Firefox 16+, Opera 10.5+ (с префиксом), Opera 23+, IE 9+ (с префиксом), IE 10+</p>
+    
+
+
+    <h3>Перекос</h3>
+    <div style="overflow: hidden;">
+    <p>С помощью transform skew. Можно задавать перекос только по x или y, можно сразу по двум параметрам</p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; transform: skew(20deg); border: solid red 1px;">CSS3 умеет делать перекос</p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; transform: skew(20deg, -6deg); border: solid red 1px;">CSS3 умеет делать перекос</p>
+    </div>
+    <p>Поддержка: Chrome 36+, Firefox 16+, Opera 10.5+ (с префиксом), Opera 23+, IE 9+ (с префиксом), IE 10+</p>
+
+
+
+    <h3>Масштаб</h3>
+    <div style="overflow: hidden;">
+    <p>С помощью scale. Можно также задавать по x и по y. deg писать не нужно. По умолчанию машстаб 1. Если добавляем минус - то элемент перевернется</p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; transform: scale(1.2);  border: solid red 1px;">CSS3 умеет<br>увеличивать</p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; transform: scaleY(-1.2); border: solid red 1px;">CSS3 умеет<br>увеличивать</p>
+    </div>
+    <p>Chrome 36+, Firefox 16+, Opera 10.5+ (с префиксом), Opera 23+, IE 9+ (с префиксом), IE 10+</p>
+
+
+
+    <h3>Перемещение</h3>
+    <div style="overflow: hidden;">
+    <p>С помощью translate. Также можно отдельно по x, отдельно по y.</p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; transform: translate(20px);">CSS3 умеет перемещать</p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; transform: translateY(20px);">CSS3 умеет перемещать</p>
+    </div>
+    <p>Поддержка: Chrome 36+, Firefox 16+, Opera 10.5+ (с префиксом), Opera 23+, IE 9+ (с префиксом), IE 10+</p>
+
+
+
+    <h3>3D-трансформации</h3>
+    <div style="overflow: hidden;">
+    <p>Когда мы задаем элементу какое-то искажение, монжо его моделировать в 3D-пространстве с помощью perspective</p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; height: 300px; font-size: 30px; border: solid red 1px; background-image: url(../../lesson7/homework_2/sizesmallpic2.jpg); transform: perspective(500px) rotate3d(30, 90, 0, 40deg);">  </p>
+    </div>
+    <p>Кроме rotate3d, есть ещё scale3d, translate3d и др - см. - https://www.w3schools.com/css/css3_3dtransforms.asp</p>
+    <p>Матрица, где мы можем изменять элемент и копировать готовый код - http://www.useragentman.com/matrix/ или вот эта http://westciv.com/tools/transforms/index.html</p>
+    <p>Поддержка: Chrome 36+, Firefox 16+, IE 10+ (частично)</p>
+
+
+    <h3>Расчёт формул</h3>
+    <p>С помощью этого мы можем высчитывать определенные размеры. Свойство - calc</p>
+    <img src="img/pic3.jpg">
+
+
+    <h3>изображение на рамке</h3>
+    <p>Это задание с рамкой мы делали ранее/ slice - задает видимое поля из изображения. border-solid - толщину рамки
+    <br> С растягиванием на гранях - свойство  border-image-repeat: stretch
+    <br>С растягиванием до целого количества повторов -  border-image-repeat: round
+    <br>Серединка тоже может быть сохранена и размножена: - slice 30 fill</p>
+    <div style='border: solid 30px;
+    border-image: url("img/ramka.png");
+    border-image-slice: 30;
+    border-image-repeat: repeat'>
+    Однажды в студёную зимнюю пору я из лесу вышел. был сильный мороз. Гляжу &mdash; поднимается медленно в гору лошадка, везущая хворосту воз. И шествуя рядом, в спокойствии чинном, лошадку ведёт под уздцы мужичок, в больших сапогах, в полушубке овчинном, в больших рукавицах, а сам &mdash; с ноготок.
+    </div>
+    <p>Поддержка: Chrome 16+, Firefox 15+, IE 11+</p>
+    
+
+
+    <h3>фильтры</h3>
+    <p>Задаются с помощью свойства filter. Его значения:</p>
+    <ul>
+        <li>filter: grayscale(100%) - блок станет черно-белым</li>
+        <li>grayscale(50%) - на 50 процентов</li>
+        <li>sepia(50%) - сепия 50 процентов</li>
+        <li>grayscale(50%) sepia(50%) - чёрно-белый 50% + сепия 50%</li>
+        <li>saturate(50%) - насыщенность 50 процентов, или любой др процент</li>
+        <li>brightness(50%) - ярковть 50 процентов, или любой др процент</li>
+        <li>contrast(50%) - контрастность 50 процентов, или любой др процент</li>
+        <li>blur(1px) - размытие на 1 пиксель или можно больше</li>
+        <li>hue-rotate(120deg - поворот тона на 120 градусов</li>
+    </ul>
+    <p>В последнем свойстве мы можем полностью менять цвет рисунка. Картинка с градусами см. ниже. Задав определенный градус - картинка будет нужного цвета. 
+    <br> Это удобно делать в конструкторе интерьера, когда необходимо поменять цвета стен или потолка, например.</p>
+    <p>Примеры</p>
+    <img src="img/pic5.jpg" alt="" style="width: 700px;">
+    <img src="img/pic6.jpg" alt="" style="width: 700px;">
+    <img src="img/pic7.jpg" alt="" style="width: 700px;">
+    <img src="img/pic8.jpg" alt="" style="width: 700px;">
+    <img src="img/pic9.jpg" alt="" style="width: 700px;">
+    <img src="img/pic10.jpg" alt="" style="width: 700px;">
+    <img src="img/pic11.jpg" alt="" style="width: 700px;">
+    <p>Цветоой круг</p>
+    <img src="img/pic4.jpg" alt="">
+    <p>Поддержка: Chrome 18+ (с префиксом), Chrome 53+, Firefox (неполная), Firefox 35+</p>
+
+
+    <h3>Обрезка</h3>
+    <p>Обрезка (clipping) — установка некоторого региона, за пределами которого изображение не отображается (становится полностью прозрачным).
+    <br>Стилевое свойство clip позволяет задать прямоугольник, вырезающий нужную часть изображения:
+    clip: rect(верх,право,низ,лево)
+    <br><br>Может применяться к HTML-элементам и некоторым SVG-элементам.
+    <br><br>Может применяться только к абсолютно позиционированным элементам
+    <br><br>Это стилевое свойство устарело.</p>
+        <div style='position: relative; height: 230px; background-color: lightgreen'>
+            <img src='img/pic12.jpg' style='position: absolute; clip: rect(50px, 290px, 190px, 50px);'>
+            <p>Первое число - насколько сверху обрезаем изображение, второе - от начала до какого пикселя будет видна картинка, третье - сверху до низу сколько в px будет видна, и последнее - от левого боку по x сколько будет обрезана. </p>
+        </div>
+    <p>Обрезка стилевым свойством clip-path</p>
+    <p>Стилевое свойство clip-path позволяет задать форму обрезающего региона.</p>
+    <p>Регион может иметь одну из предзаданных форм (прямоугольник, эллипс, многоугольник) либо произвольную форму, задаваемую SVG-элементом clipPath, внутри которого может располагаться любая комбинация SVG-элементов rect, circle, ellipse, path, polygon, image, text.</p>
+    <p>Может применяться к любым HTML-элементам и любым SVG-элементам.
+    <br>Можно задать закругленные углы через - round
+    </p>
+    <div style='background-color: lightgreen'>
+        <img src='img/pic12.jpg' style='clip-path: inset(15px 80px 30px 30px round 20px)'>
+    </div>
+    <p>Здесь уже считается от начала до точки обрезания, как мы считаем обычно</p>
+    <p>Ниже зададим круг и эллипс. проценты в скобках указывают точку радиуса, первые цифры - размер радиуса. У круга радиус один, у эллипса два.
+    <br>Также можно задавать сложные фигуры, у которых несколько углов. В скобках указываются точки через запятую с присвоенными по x и y значениям.
+    </p>
+    <div style='background-color: lightgreen'>
+        <img src='img/pic12.jpg' style='clip-path: circle(100px at 50% 50%)'>
+        <img src='img/pic12.jpg' style='clip-path: ellipse(150px 100px at 50% 50%)'>
+        <img src='img/pic12.jpg' style='clip-path: polygon(50px 80px, 400px 30px, 150px 250px)'>
+    </div>
+    <p>Еще примеры</p>
+    <img src="img/pic13.jpg" alt="">
+
+    
+    <h3>Маскирование</h3>
+    <p>Маскирование стилевым свойством mask (Маскирование - masking) - установка полной или частичной прозрачности некоторым участкам изображения.</p>
+    <p>Для изображения может быть задана маска — растровое изображение либо SVG-фрагмент; конкретное содержимое маски не имеет значение, имеет значение только альфа-канал маски, т.е. уровень прозрачности каждого из пикселей маски. Те части исходного изображения, на которое попадут прозрачные пиксели маски, станут прозрачными; те части, на которые попадут полупрозрачные пиксели маски, станут полупрозрачными, и т.д.</p>
+    <p>Маска (непрозрачный эллипс с полупрозрачными краями, полная прозрачность вне эллипса):</p>
+    <div style="background-color: lightgreen">
+      <img src="img/pic14.png">
+      <img src="img/pic12.jpg" style="mask: url('img/pic14.png')">
+    </div>
+
+    <p>Маскирование SVG-атрибутом mask</p>
+    <p>Маска (непрозрачный эллипс с полупрозрачными краями, полная прозрачность вне эллипса):</p>
+    <div style="background-color: lightgreen">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="266">
+      <filter id="fff">
+        <feGaussianBlur stdDeviation="10"/>
+      </filter>
+      <ellipse cx="200" cy="133" rx="150" ry="100" fill="red" filter="url(#fff)"/>
+    </svg>
+    </div>
+    <p>Наложение картинки на маску</p>
+    <div style="background-color: lightgreen">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="266">
+          <filter id="fff">
+            <feGaussianBlur stdDeviation="10"/>
+          </filter>
+          <mask id="mmm">
+            <ellipse cx="200" cy="133" rx="150" ry="100" fill="white" filter="url(#fff)"/>
+          </mask>
+          <image xlink:href="img/pic12.jpg" width="400" height="266" mask="url(#mmm)"/>
+        </svg>
+        </div>
+    
+    <p>Маскирование атрибутом mask-border или стилевым свойством mask-box-image</p>
+    <p>При данном подходе, маска делится на 9 частей и верхняя, нижняя, левая, правая части автоматически размножаются либо растягиваются на нужный размер (аналогично работе стилевого свойства border-image).</p>
+    <p>Изображение маски (показаны разделительные линии):</p>
+    <img src="img/maska.svg" alt="">
+    <p>Исходное изображение после наложения маски:</p>
+    <div style='background-color: lightgreen; padding: 10px'>
+      <img src='img/pic12.jpg' style='-webkit-mask-box-image: url(img/maska.svg) 35 round;'>
+    </div>
+    <p>Поддержка маскирования неплохая, если использовать вендорные префиксы.</p>
+    <p>видеолекция CSS Clipping & Masking - https://www.youtube.com/watch?v=2pra1DLA_aQ&list=PLZfRjCZl2NuQxnIQCpLtiBjGJjpIvzx8I&index=5</p>
+    <p>статья SVG-маски - http://css.yoksel.ru/svg-masks/</p>
+
+
+
+    <h3>Размер фона</h3>
+    <p>Можем устанавливать ширину и высоту фону. Можно устанавливать в пикселях, можно в процентах</p>
+    <div style='background: url("img/ball.png") left top no-repeat; width: 300px; height: 200px; border: solid red 1px; background-size: 150px 33%'></div>
+    <p>Можно ставить один параметр (или по ширину или высоту), второй будет расширяться автоматически, сохраняя пропорции. Или на его месте прописать auto</p>
+    <div style='background: url("img/ball.png") left top no-repeat; width: 300px; height: 200px; border: solid red 1px; background-size: 50% auto'></div>
+    <p>background-size: contain - говорит о том, что картинка (фон) должна всегда вмещаться в наш блок полностью. Т.е. мы уменьшим размер блока - уменьшиться пропорционально и сам фон (картинка).</p>
+    <div style='background: url("img/ball.png") left top no-repeat; width: 200px; height: 300px; border: solid red 1px; background-size: contain'></div>
+    <p>При background-size: cover - картинка(фон) будет всегда отображаться полностью, не зависимо от размера блока. Если размер блока меньше размера картинки - то какая-то часть картинки не будет видна.
+    <br>При этом, картинка растягивается. Т.е. заполняет всю ширину элемента без искажений</p>
+    <div style='background: url("img/ball.png") left top no-repeat; width: 200px; height: 300px; border: solid red 1px; background-size: cover'></div>
+    <p>Поддержка: Chrome, Firefox, Opera 10.5+, IE 9+</p>
+
+
+
+    <h3>Точка отсчёта положения фона</h3>
+    <p>По умолчанию картинка на фоне устанавливается на паддинг. Если мы хотим, чтобы она устанавливалась побордеру - прописываем background-origin: border-box;. 
+    <br>Если хотим, чтобы она устанавливалась по области контента -  background-origin: content-box;</p>
+   <div style="overflow: hidden;">
+   <div style="border: solid rgba(255, 0, 0, 0.2) 20px;
+                background: url(img/pic12.jpg) left top no-repeat;
+                background-origin: padding-box;
+                width: 500px; height: 300px;
+                padding: 20px;
+                float: left;
+                margin: 20px;">
+    Текст Текст Текст Текст Текст Текст Текст Текст
+    </div>
+    <div style="border: solid rgba(255, 0, 0, 0.2) 20px;
+                background: url(img/pic12.jpg) left top no-repeat;
+                background-origin:border-box;
+                width: 500px; height: 300px;
+                padding: 20px;
+                float: left;
+                margin: 20px;">
+    Текст Текст Текст Текст Текст Текст Текст Текст
+    </div>
+    <div style="border: solid rgba(255, 0, 0, 0.2) 20px;
+                background: url(img/pic12.jpg) left top no-repeat;
+                background-origin: content-box;
+                width: 500px; height: 300px;
+                padding: 20px;
+                float: left;
+                margin: 20px;">
+    Текст Текст Текст Текст Текст Текст Текст Текст
+    </div>
+    </div>
+    <p>Поддержка: Chrome, Firefox, Opera 10.5+, IE 9+</p>
+
+
+    <h3>обрезка фона</h3>
+    <p>Мы можем обрезать фон. За это отвечает свойство background-clip. Обрезать также можем по паддингам, контенту и бордерам
+    <br>Наприер если он спозиционирован под бордер и мы обрезаем под бордер = ничего не изменится. 
+    <br> А если мы его разместили под бордер, а обрезали по контенту, тогад проихойдет следующее:</p>
+    <div style="overflow: hidden;">
+    <div style="border: solid rgba(255, 0, 0, 0.2) 20px;
+                background: url(img/pic12.jpg) left top no-repeat;
+                background-origin: border-box;
+                width: 500px; height: 300px;
+                background-clip: border-box;
+                padding: 20px;
+                float: left;
+                margin: 20px;">
+    Текст Текст Текст Текст Текст Текст Текст Текст
+    </div>
+    <div style="border: solid rgba(255, 0, 0, 0.2) 20px;
+                background: url(img/pic12.jpg) left top no-repeat;
+                background-origin: border-box;
+                background-clip: content-box;
+                width: 500px; height: 300px;
+                padding: 20px;
+                float: left;
+                margin: 20px;">
+    Текст Текст Текст Текст Текст Текст Текст Текст
+    </div>
+    </div>
+    <p>татья Свойство background-clip и его применения - https://css-live.ru/articles-css/background-clip-use-cases.html</p>
+    <p>Поддержка: Chrome, Firefox, Opera 10.5+, IE 9+</p>
+
+
+
+    <h3>Множественный фон</h3>
+    <p>Множественный фон мы уже ранее проходили - приме рс рамкой. Урок 5</p>
+    <p>Поддержка: Chrome, Firefox, IE 9+</p>
+
+
+
+    <h3>Стиль выделения</h3>
+    <p>Мы можем стилизовать текст, выделяя его, например менять размер или цвет. Можно применять на тексте в любом элементе. 
+    <br>Это можно сделать с помощью selection.
+    </p>
+    <style>
+        .example::selection{
+            background: cornflowerblue;
+            font-size: 20px;
+            color: red;
+        }
+        .example2::selection{
+            background: rgb(0, 247, 53);
+            font-size: 30px;
+            color: rgb(255, 0, 200);
+        }
+    </style>
+        <input type="text" class="example" value="Пример номер 1">
+        <div class="example2">Пример номер 2</div>
+    <p>Поддержка: Chrome, Firefox (с префиксом), Firefox 62+, Opera 9.6+, IE 9+</p>
+
+
+
+    <h3>Отсчёт размеров</h3>
+    <p>Когда мы пишем div, его закрашиваем, а потом задаем padding, то закрашенный див увеличится на величину паддинга. 
+    <br>Это не всегда удобно, потому что размер контетна у нас остается нужный, но при этом сам блок в размере вырос.
+    <br> Поэтому лучше всего устанавливать сразу box-sizing: content-box. Т.е. в этом случае, ширина содержимого у нас будет контекст+паддинг+бордер.
+    <br> По умолчанию стоит box-sizing: content-box.
+    </p>
+    <div style="overflow: hidden;">
+        <div style='display: inline-block; width: 500px; padding: 20px; border: solid red 20px; margin: 20px'>
+            B. ширина 500px = содержимое<br>
+            padding, border-width, margin добавляются к указанной ширине
+            <br>т.е. итого ширина равна Pслева(20) + Pсправа(20) + Mслева(20) + Mсправа(20) + контент(500) = 580
+            </div>
+            
+            <div style='display: inline-block; width: 500px; padding: 20px; border: solid red 20px; margin: 20px; box-sizing: content-box'>
+            C. то же самое. ширина 500px = содержимое<br>
+            padding, border-width, margin добавляются к указанной ширине
+            <br>т.е. итого ширина равна Pслева(20) + Pсправа(20) + Mслева(20) + Mсправа(20) + контент(500) = 580
+            </div>
+            
+            <div style='display: inline-block; width: 500px; padding: 20px; border: solid red 20px; margin: 20px; box-sizing: border-box'>
+            D. ширина 500px = содержимое + padding + border-width<br>
+            margin добавляется к указанной ширине
+            </div>
+    </div>
+    <p>Поддержка: Chrome 10+, Firefox 29+, Opera, IE 8+</p>
+
+
+    <h3>CSS transitions. Анимация</h3>
+    <p>transition - это общее свойство анимации, как background. Оно имеет ряд дополнений:
+    <br>С помощью  transition-duration мы можем задать длительность перехода. 
+    <br>Property - мы указываем, на какое свойство мы хотим сделать плавный переход. На остальные переход будет обычный
+    <br>Delay - задержка, т.е. количество секунд, кторое мы должны подержать, чтобы все указанные свойства изменились.
+    <br>timing-function: ease-out; - каким образом будет меняться анимация, т.е. ее стиль
+    </p>
+    <div style="overflow: hidden;">
+        <style>
+            .div1, .div2, .div3{background-color: yellow;
+                color: red;
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+                font-size: 20px;
+            }
+            .div1:hover{
+                background-color: rgb(0, 247, 53);
+                color: blue;
+            }
+            .div2:hover{
+                background-color: rgb(0, 247, 53);
+                color: blue;
+                transition-duration:2s
+            }
+            .div3:hover{
+                background-color: rgb(0, 247, 53);
+                color: blue;
+                transition-duration:2s;
+                transition-property: background-color;
+                transition-delay: 1s;
+                transition-timing-function: cubic-bezier(0, 0.04, 1, 0.45);
+            }
+
+        </style>
+        <div class="div1">CSS3 умеет делать плавный переход между значениями стилевых свойств</div>
+        <div class="div2">CSS3 умеет делать плавный переход между значениями стилевых свойств</div>
+        <div class="div3">CSS3 умеет делать плавный переход между значениями стилевых свойств</div>
+    </div>
+    <p>Примеры: один - http://media.24ways.org/2009/14/5/index.html
+    <br> два - https://zurb.com/playground/sliding-vinyl
+    <br> три - https://webkit.org/blog-files/leaves/index.html
+    <br> четыре - https://tympanus.net/Tutorials/OriginalHoverEffects/index10.html
+    <br> пять - https://www.alessioatzeni.com/wp-content/tutorials/html-css/CSS3-Hover-Effects/index_5.html
+    <br> шесть - https://www.minimamente.com/project/magic/ </p>
+    <p>Можно сделать плавным изменение сразу всех стилевых свойств: стандартное поведение поведение с transition-duration</p>
+    <p>Поддержка: Chrome 26+, Firefox 16+, Opera 12.1+, IE 10+</p>
+
+
+
+    <h3>keyframes </h3>
+    <p>Это что-то наподобие медиа-запросов. Прописывается @, потом keyframes , после его идентификатор. В скоках прописываем from to
+    <br>В самом блоке мы прописываем   animation: MyAnimation1 (идентификатор, на который мы в keyframes будем ссылаться) 3s (длтельность переходиа) infinite (поторение бесконечное количество)
+    <br>В этом случае мы не прописываем background изначально у блока
+    <br>Чтобы анимация повторялась только несколько раз - можно прописать iteration-count 7. задается в animation
+    <br>Есть еще fill-mode  и если мы пропишем forwards, оно задается также в animation. Это свойство говорит о том, что после анимации вы возвращаемся обратно последнему, что было прописано в keyframes.
+    <br>Можно сделать сразу несколько анимаций - пример 3.
+    </p>
+    
+    <div style="overflow: hidden;">
+    <style>
+        @keyframes Ex4{
+            from{background: blue;}
+            to{background: red;}
+        }
+        @keyframes Ex5{
+            from{background: blue;}
+            20%{background: yellow;}
+            to{background: red;}
+        }
+        @keyframes Ex6A{
+            from{background: coral;}
+            to{background: darkgreen;}
+        }
+        @keyframes Ex6B{
+            from{color: blue;}
+            to{color: white;}
+        }
+        .div4, .div5, .div6{
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .div4{
+            animation: Ex4 3s infinite;
+        }
+        .div5{
+            animation: Ex5 5s;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+        }
+        .div6{
+            animation:
+            Ex6A 6s 3 forwards,
+            Ex6B 2s infinite;
+        }
+       
+    </style>
+    <div class="div4">CSS3 умеет делать плавный переход между значениями стилевых свойств</div>
+    <div class="div5">CSS3 умеет делать плавный переход между значениями стилевых свойств</div>
+    <div class="div6">CSS3 умеет делать плавный переход между значениями стилевых свойств</div>
+    </div>
+    <p>Поддержка: Chrome 39+, Firefox 16+, Opera 12+ (с префиксом), Opera 26+, IE 10+</p>
+
+
+    <h3>Анимация обрезки</h3>
+    <style>
+        .img1{
+            clip-path: ellipse(150px 100px at 50% 50%);
+        }
+        .img1:hover{
+            animation: image1 2s infinite;
+        }
+        @keyframes image1{
+            0%{clip-path: ellipse(150px 100px at 50% 50%)}
+            50%{clip-path: ellipse(100px 150px at 50% 50%)}
+            100%{clip-path: ellipse(150px 100px at 50% 50%)}
+        }
+    </style>
+    <div style="background: lightskyblue;">
+        <img src="img/pic12.jpg" alt="" class="img1">
+    </div>
+    <p></p>
+
+
+    <h3>animations с шагом</h3>
+    <p>Чтобы была плавная анимация - необходимо прописать 256 шагов (количество смены цветов). 
+    <br>Если поставить шаг - 3 или 5, то анимация будет с резким переходом в несколько цветов. 
+    <br>Для того, чтобы сделать движущегося человека, необходимо подготовить заранее картинку одну, на которой будут изображены все степы в нужном количестве.
+    <br>В это случае, например если человек по ширине 50 пикселей, а сама картинка 500, то мы говорим, что начинам с позиции 0 пикселей и за 6 шагов мы должны
+    пройти в позицию: 500-50=450, чтобы был виден последний человек.Высоту и ширину блока делаем таку, как у одного степа, т.е. ширина будет 50 пикселей
+    </p>
+    <style>
+    @keyframes Ex7{
+        from{background: blue;}
+        to{background: rgb(43, 255, 0);}
+    }
+    @keyframes Ex8{
+        from{background: url(img/sheet.jpg) 0 0;}
+        to{background: url(img/sheet.jpg) -396px 0;} /*462 - 66 = 396*/
+    }
+    .div7{
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .div7{
+        animation: Ex7 3s steps(3) infinite;
+    }
+    .div8{
+        width: 66px;
+        height: 135px;
+        animation: Ex8 5s steps(6) infinite;
+    }
+    </style>
+    <div class="div7">CSS3 умеет делать плавный переход между значениями стилевых свойств</div>
+    <div class="div8"></div>
+    <p></p>
+
+
+    <h3>Анимация размера — проблема и решение</h3>
+    <div style="overflow: hidden;">
+    <p></p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    </div>
+    <p></p>
+    
+
+    <h3>Перемещение</h3>
+    <div style="overflow: hidden;">
+    <p></p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    </div>
+    <p></p>
+    
+
+    <h3>Перемещение</h3>
+    <div style="overflow: hidden;">
+    <p></p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    </div>
+    <p></p>
+    
+
+    <h3>Перемещение</h3>
+    <div style="overflow: hidden;">
+    <p></p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    </div>
+    <p></p>
+    
+
+
+
+
+
+
+
+
+    </div>
+    <p></p>
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+</body>
+</html>
