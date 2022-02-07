@@ -608,13 +608,97 @@
 
 
     <h3>Анимация размера — проблема и решение</h3>
+   
+    <p>Когда у нас увеличивается при ховере один из элементов - стоящие рядом также увеличиваются в размере.
+    Чтобы этого не происходило, можно использовать свойство transform: scale (значение)
+    </p>
+    <style>
+        .kirp > img, .kirp2 > img{
+            width: 50px; margin: 10px; transition: width 0.5s /*делает плавный переход*/
+        }
+        .kirp2 > img{
+            transition: transform 0.5s;
+        }
+        .kirp >img:hover{
+            width: 60px;
+        }
+        .kirp2 > img:hover{
+            transform: scale(1.3);
+        }
+    </style>
     <div style="overflow: hidden;">
-    <p></p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+     <div class="kirp" style="float: left; margin: 50px;">
+        <img src="img/kirp1.png" alt="">
+        <img src="img/kirp2.png" alt="">
+        <img src="img/kirp3.png" alt=""><br>
+        <img src="img/kirp1.png" alt="">
+        <img src="img/kirp2.png" alt="">
+        <img src="img/kirp3.png" alt="">
+    </div>
+    <div class="kirp2" style="float: left; margin: 50px;">
+        <img src="img/kirp1.png" alt="">
+        <img src="img/kirp2.png" alt="">
+        <img src="img/kirp3.png" alt=""><br>
+        <img src="img/kirp1.png" alt="">
+        <img src="img/kirp2.png" alt="">
+        <img src="img/kirp3.png" alt="">
+    </div>
+    </div>
+    
+
+    <h3>невозможность анимации от auto или до auto</h3>
+    <p>Анимация должна быть задана от точки до точки. Когда мы ставим высоту auro - браузер не понимает, где заканчивается анимация. поэтому ее не делает</p>
+    <div style="overflow: hidden;">
+    <p>Анимация высоты от явно заданной до auto</p>
+    <style>
+        .text-block-1
+        {
+            width: 150px;
+            transition: height 1s;
+            height: 10px;
+            background-color: #8080FF;
+            overflow: hidden;
+        }
+        .text-block-1:hover
+        {
+            height: auto;
+        }
+    </style>
+    <div class="text-block-1" style="float: left;">
+        я из лесу вышел, был сильный мороз; гляжу - поднимается медленно в гору
+    </div>
+    <br>
+    <p>Анимация высоты от явно заданной до явно заданной</p>
+    <style>
+        .text-block-2
+        {
+            width: 150px;
+            transition: height 1s;
+            height: 10px;
+            background-color: #8080FF;
+            overflow: hidden;
+        }
+        .text-block-2:hover
+        {
+            height: 200px;
+        }
+    </style>
+    <div class="text-block-2" style="float: left;">
+        я из лесу вышел, был сильный мороз; гляжу - поднимается медленно в гору
+    </div>
     </div>
     <p></p>
     
+
+
+    <h3>CSS анимации — ссылки</h3>
+    <p>Статья Очень простое руководство по CSS3-анимациям - https://github.com/FrontenderMagazine/ochen-prostoe-rukovodstvo-po-css-animatsiyam/blob/master/rus.md </p>
+    <p>Примеры анимаций -  https://animista.net/ </p>
+    <p>Список стилевых свойств, для которых работает CSS-анимация - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties </p>
+    <p>Хороший сайт - CSS3 ученик, http://www.wisdomweb.ru/ </p>
+    <p>По анимациям есть еще классный сайт - https://animate.style/</p>
+
+ 
 
     <h3>Перемещение</h3>
     <div style="overflow: hidden;">
@@ -623,7 +707,7 @@
     <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
     </div>
     <p></p>
-    
+
 
     <h3>Перемещение</h3>
     <div style="overflow: hidden;">
@@ -632,7 +716,16 @@
     <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
     </div>
     <p></p>
-    
+
+
+    <h3>Перемещение</h3>
+    <div style="overflow: hidden;">
+    <p></p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    </div>
+    <p></p>
+
 
     <h3>Перемещение</h3>
     <div style="overflow: hidden;">
