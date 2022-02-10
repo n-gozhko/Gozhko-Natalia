@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Css3</title>
     <style>
         h1,h2,h3{
@@ -700,46 +704,102 @@
 
  
 
-    <h3>Перемещение</h3>
-    <div style="overflow: hidden;">
-    <p></p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    <h3>Пример анимации с сайте animate.style</h3>
+    <div>
+    <h1 style="padding-top: 50px;" class="animate__animated animate__slideInDown animate__infinite	infinite animate__slower 3s">An animated element</h1>
     </div>
-    <p></p>
 
 
-    <h3>Перемещение</h3>
-    <div style="overflow: hidden;">
-    <p></p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+
+    <h3>CSS-графика</h3>
+    <img src="img/pic14.jpg" alt="">
+    <p>Реаилизуем этот пример</p>
+    <a href="primer.html" target="_blank">СМОТРИ пример по этой ссылке</a>
+    <br><br><br>
+
+    <style>
+        .treygolnik, .treygolnik2{
+            border: solid red 30px;
+            border-top: solid blue 30px;
+            border-left: solid rgb(255, 0, 234) 30px;
+            border-right: solid rgb(0, 255, 13) 30px;
+        }
+        .treygolnik2, .treygolnik3{
+            width: 0;
+            height: 0;
+        }
+        .treygolnik3{
+            border: solid rgba(255, 0, 0, 0) 30px;
+            border-top: solid rgba(0, 0, 255, 0) 30px;
+            border-left: solid rgba(255, 0, 234, 0) 30px;
+            border-right: solid rgb(0, 255, 13) 20px;
+        }
+    </style>
+    <div class="treygolnik">вспомним свойства бордера
     </div>
-    <p></p>
-
-
-    <h3>Перемещение</h3>
-    <div style="overflow: hidden;">
-    <p></p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    <p>далее говорим, что у нас этот элемент шириной и высотой 0, и убираем контент.</p>
+    <div class="treygolnik2">
     </div>
-    <p></p>
-
-
-    <h3>Перемещение</h3>
-    <div style="overflow: hidden;">
-    <p></p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
-    <p style="float: left; margin: 10px; padding: 10px; width: 500px; font-size: 30px; border: solid red 1px; ">  </p>
+    <p>Делаем все остальные элементы прозрачные, а этот изменяем на такую форму, как нам необходимо.</p>
+    <div class="treygolnik3">
     </div>
+    <p>После это можно запихнть все в before и таким образом это сработает</p>
+
+    <p>Полезные ссылки:</p>
+    Пример 1 - https://css-tricks.com/the-shapes-of-css/
+    Пример 2 - https://nicolasgallagher.com/pure-css-speech-bubbles/demo/
+    Пояснения - https://habr.com/ru/post/46033/
+    видеодоклад Роман Комаров, «Бесчеловечные эксперименты над CSS» (смотреть с 15:40) - https://vimeo.com/channels/wstdays/34190518
+    статья «Кружевные орнаменты на CSS» - https://habrahabr.ru/post/315216/
+
+    <h3>Кроссбраузерность</h3>
+    <p>Internet Explorer может неправильно наследовать размеры шрифтов от родителя к потомку, если размеры шрифтов заданы в единицах измерения em.</p>
+    <p>Для правильной работы Internet Explorer с единицами измерения em в размерах шрифтов следует задавать стилевое описание:</p>
+    <p>body font-size: 100%;</p>
+    <br>
+    <p>В некоторых браузерах по-умолчанию отключено сглаживание шрифтов, из-за чего буквы могут выглядеть угловатыми.</p>
+    <p>Для включения сглаживания шрифтов:</p>
+    <p>meta http-equiv="cleartype" content="on"</p>
+    <br>
+    <p>Иногда есть смысл запрещать изменять размер элемента textarea:</p>
+    <p>input, textarea
+        {
+                resize: none;
+        }</p>
+
+
+
+    <h3>Кроссбраузерность на мобильных устройствах</h3>
+    <p>Некоторые мобильные браузеры могут автоматически изменять размеры шрифтов при изменении ориентации устройства.</p>
+    <p>Для отключения этого поведения:</p>
+    <p>*, body
+        {
+            -webkit-text-size-adjust: none;
+        }</p>
+    <br>
+    <p>В некоторых случаях смартфоны автоматически изменяют масштаб страницы, лучше эту возможность отключать:</p>
+    <p>meta name="HandheldFriendly" content="True"/</p>
+    <br>
+    <p>Чтобы мобильные браузеры не пытались обнаружить на веб-странице телефоны и адреса и соответственно не предлагали функционал для работы с ними:</p>
+    <p>meta name="format-detection" content="telephone=no"/</p>
+    <p>meta name="format-detection" content="address=no"/</p>
+    <p>meta name="x-rim-auto-match" content="none" forua="true"</p>
+
+
+    <h3>Кроссбраузерность — проблемы версий Internet Explorer</h3>
+    <p>Internet Explorer часто работает в режиме совместимости с какой-либо из своих предыдущих версий.</p>
+    <p>Чтобы переключить Internet Explorer в режим последней версии:</p>
     <p></p>
-    
+    <p><!-- saved from url=(0014)about:internet --></p>
+    <p>meta http-equiv="X-UA-Compatible" content="IE=edge"/</p>
 
 
 
+    <h3>Modernizr</h3>
+    <p>сайт Modernizr - https://modernizr.com/ </p>
+    <p>пример - http://fe.it-academy.by/Examples/Desk_Touch.html</p>
 
-
+        
 
 
 
