@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    /*font-family: 'Noto Sans', sans-serif;*/
+    font-family: 'Roboto', sans-serif;  
+    color: black;
+    height: 10000px;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+/*header*/
+.header{
+
+}
+.header-top{
+
+}
+
+/*header-top-menu*/
+.header-top ul.header-top-menu{
+    padding-top: 26px;
+    float: left;
+    margin-right: 76px;
+}
+.header-top ul.header-top-menu li{
+    float: left;
+    margin-right: 26px;
+}
+.header-top ul.header-top-menu li a{
+    font-family: "Noto Sans" sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+
+/*header-top-icons*/
+.header-top-icons{
+    float: right;
+    padding-top: 24px;
+}
+.header-top-icons li{
+    float: left;
+    margin-right: 24px;
+}
+.header-top-icons li:nth-child(3){
+    margin-right: 45px;
+}
+.header-top-icons li:last-child img{
+    margin-right: 8px;
+}
+.header-top-icons li:last-child span{
+    vertical-align: 7px;
+}
+
+
+
+/*.phone*/
+.header-top .phone{
+    padding-top: 24px;
+}
+.header-top .phone span{
+    vertical-align: 7px;
+    margin-left: 8px;
+}
+
+
+
+/*header-search*/
+.header-search{
+
+}
+.header-search img{
+
+}
+.header-search .search{
+    float: left;
+    background: #F9F9F9;
+    border-radius: 8px;
+    width: 702px;
+    height: 52px;
+    margin-top: 51px;
+    padding-left: 24px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+
+}
+.header-search img[alt="humb"]{
+    float: left;
+    margin-top: 65px;
+    margin-right: 45px;
+}
+.header-search img[alt="logo"]{
+    float: left;
+    margin-top: 36px;
+    margin-right: 45px;
+}
+.header-search .search span{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    vertical-align: 6px;
+    padding-left: 16px;
+}
+.header-search button{
+    float: right;
+    width: 156px;
+    height: 52px;
+    background: #81B43F;
+    border-radius: 8px;
+    border: none;
+    margin-top: 52px;
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.header-search button span:first-child{
+    display: inline-block;
+    height: 28px;
+    border-right: 1px solid #FFFFFF;
+    padding-right: 14px;
+    vertical-align: sub;
+}
+.header-search button span:last-child{
+    margin-left: 14px;
+    vertical-align: sub;
+}
+
+
+/*header-bottom-menu*/
+.header-bottom-menu{
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 24px;
+    margin-left: 239px;
+}
+.header-bottom-menu li{
+    float: left;
+    margin-right: 29px;
+}
+.header-bottom-menu li.active{
+    color: #FF715B;
+}
+
+
+
+/*sale*/
+.sale{
+    height: 381px;
+    background: url(../img/elka.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: 37px;
+    padding-top: 77px;
+}
+.sale-red-block{
+    width: 511px;
+    height: 226px;
+    background: #FF715B;
+    float: right; 
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    color: white;
+    text-align: center;
+}
+.sale-red-block h1 span:first-child{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    display: block;
+    padding-top: 41px;
+}
+.sale-red-block h1 span:nth-child(2){
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 60px;
+    display: block;
+}
+.sale-red-block h1 span:last-child{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    display: block;
+}
+
+
+/*filters*/
+.filters-wrap{
+}
+.filters{
+    height: 83px;
+    border-left: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+    width: 272px;
+    float: left;
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 28px;
+}
+.filters img{
+    margin-left: 83px;
+    margin-right: 8px;
+}
+.filters span{
+    vertical-align: 4px;
+}
+.filters-wrap ul{
+    float: right;
+    margin-top: 32px;
+}
+.filters-wrap ul li{
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    float: left;
+    margin-right: 64px;
+}
+.filters-wrap ul li:last-child{
+    margin-right: 0px;
+}
+.filters-wrap ul li:hover{
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #FF715B;
+}
+
+
+
+/*test*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
