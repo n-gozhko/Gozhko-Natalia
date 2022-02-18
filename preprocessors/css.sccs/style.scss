@@ -1,0 +1,70 @@
+.div2{
+    background-color: rgb(0, 121, 228);
+
+    span{
+        font-size: 20px;
+        color: green;
+
+        a{
+            font-size: 35px;
+            color: red;
+        }
+    }
+}
+@mixin first($w) {
+    @media all and (max-width: $w)
+    {
+        @content
+    }
+}
+.div3 {
+    p:first-child{
+        font-size: 30px;
+        @include first(1000px){
+            color: yellow;
+        }
+    }
+    p{
+        font-size: 15px;
+        @include first(800px){
+            color: blue;
+        }
+        @include first(700px){
+            font-size: 23px;
+        }
+        @include first(600px){
+            font-size: 30px;
+            color: red;
+        }
+
+    }
+}
+/*делаем 4 итерации.*/
+@for $aaa from 1 to 5
+{
+    .div4 p#{$aaa}{
+        font-size: $aaa*2 + 10px;
+        color: purple;
+    }
+}
+/*
+если поставить throug 5 - то будет 5 итерация
+
+в css это выглядит так: 
+.div4 p1 {
+  font-size: 12px;
+  color: purple; }
+
+.div4 p2 {
+  font-size: 14px;
+  color: purple; }
+
+.div4 p3 {
+  font-size: 16px;
+  color: purple; }
+
+.div4 p4 {
+  font-size: 18px;
+  color: purple; }
+*/
+

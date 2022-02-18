@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.div2 {
+  background-color: #0079e4; }
+  .div2 span {
+    font-size: 20px;
+    color: green; }
+    .div2 span a {
+      font-size: 35px;
+      color: red; }
+
+.div3 p:first-child {
+  font-size: 30px; }
+  @media all and (max-width: 1000px) {
+    .div3 p:first-child {
+      color: yellow; } }
+.div3 p {
+  font-size: 15px; }
+  @media all and (max-width: 800px) {
+    .div3 p {
+      color: blue; } }
+  @media all and (max-width: 700px) {
+    .div3 p {
+      font-size: 23px; } }
+  @media all and (max-width: 600px) {
+    .div3 p {
+      font-size: 30px;
+      color: red; } }
+
+/*делаем 4 итерации.*/
+.div4 p1 {
+  font-size: 12px;
+  color: purple; }
+
+.div4 p2 {
+  font-size: 14px;
+  color: purple; }
+
+.div4 p3 {
+  font-size: 16px;
+  color: purple; }
+
+.div4 p4 {
+  font-size: 18px;
+  color: purple; }
+
+/*
+если поставить throug 5 - то будет 5 итерация
+
+в css это выглядит так: 
+.div4 p1 {
+  font-size: 12px;
+  color: purple; }
+
+.div4 p2 {
+  font-size: 14px;
+  color: purple; }
+
+.div4 p3 {
+  font-size: 16px;
+  color: purple; }
+
+.div4 p4 {
+  font-size: 18px;
+  color: purple; }
+*/
+
+/*# sourceMappingURL=style.css.map */
