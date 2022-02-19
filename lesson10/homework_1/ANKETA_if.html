@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ANKETA_if</title>
+</head>
+<body>
+    <script>
+        var surname = prompt("Введите Вашу фамилию", "фамилия");
+        var name = prompt("Введите Ваше имя", "имя");
+        var patronymic = prompt("Введите Ваше отчество","отчество");
+
+        console.log(surname, name, patronymic);
+
+        var age = parseInt(prompt("Введите Ваш возраст в годах", "от 18 до 100"));  
+
+        if (age < 100 && age > 17){
+            console.log(age);
+            console.log(isNaN(age));
+        }
+        else {
+            alert("некорректно указан возраст");
+            var age = parseInt(prompt("Введите возраст еще раз (от 18 до 100)"));
+            
+                if (age < 100 && age > 17){
+                    console.log(age);
+                    console.log(isNaN(age));
+                }
+                else {
+                    console.log("некорректный возраст");
+                }
+        }
+
+        var age5 = age;
+        age5 += 5;
+       
+        
+        var gender =  confirm("Ваш пол - мужской?");
+        var pens = age;
+
+        if(gender){
+            console.log(gender='мужской');
+            
+            if(pens>=63){
+                console.log(pens='да');
+            }
+            else{
+                console.log(pens='нет');
+            }
+        }
+        else{
+            console.log(gender='женский');
+            if(pens>=58){
+                console.log(pens='да');
+            }
+            else{
+                console.log(pens='нет');
+            }
+        }
+            
+
+        alert('ваше ФИО: ' + surname + ' ' + name + ' ' + patronymic + '\n' +
+                'ваш возраст в годах: ' + age + '\n' +
+                'ваш возраст в днях: ' + age*365 + '\n' +
+                'через 5 лет вам будет: ' + age5 + '\n' +
+                'ваш пол: ' + gender + '\n' +
+                'вы на пенсии: ' + pens);
+    </script>
+
+    
+</body>
+</html>
