@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
 @import "variable";
 
-
+ 
 *{
     margin: 0;
     padding: 0;
@@ -133,7 +133,7 @@ button{
     height: 680px;
     margin-top: 9px;
     padding-top: 253px;
-    background-size: cover;
+    background-size: auto;
     position: relative;
 
     &.slider:before {
@@ -153,15 +153,16 @@ button{
         margin: 0 auto;
         padding-left: 83px;
         padding-top: 22px;
+        display: flex;
+        justify-content: space-between;
 
-        ul{
-            display: flex;
-            justify-content: space-between;
-            li{
-                font-size: $fs16;
-                line-height: 20px;
-                color: $gray;
-                margin-bottom: 6px;
+            div{
+                position: relative;
+                p{
+                    font-size: $fs16;
+                    line-height: 20px;
+                    color: $gray;
+                    margin-bottom: 6px;
 
                 &:first-child{
                     padding-right: 199px;
@@ -171,15 +172,8 @@ button{
                 }
                 &:last-child{
                     padding-right: 473px;
-                }  
-            }
-        }
-
-        .data{
-            display: flex;
-
-            div{
-                position: relative;
+                } 
+                }
 
             input{
                 background: $fon_light;
@@ -196,23 +190,24 @@ button{
                 line-height: 17px;
                 color: $gray_light;
                  
-            &[type="date"]::-webkit-calendar-picker-indicator {
-                width: 90%;
-                left: 0;
-                top: 13px;
-                position: absolute;
-                z-index: 2;
-                background-color: transparent;
-                color: transparent;
-              }
+                &[type="date"]::-webkit-calendar-picker-indicator {
+                    width: 82%;
+                    left: 0;
+                    top: 34px;
+                    position: absolute;
+                    z-index: 2;
+                    background-color: transparent;
+                    color: transparent;
+                }
 
             }
-            
 
             img{
                 position: absolute;
                 left: 234px;
-                top: 7px;
+                top: 32px;
+                width: 20px;
+                height: 22px;
             }
         }
 
@@ -227,21 +222,13 @@ button{
                 font-size: $fs14;
                 line-height: 17px;
                 color: $white;
+                margin-top: 24px;
+                margin-right: 78px;
             }
         
         }
         
-
-        
-        
-
-
-
-
-
     }
-
-}
 
 
 //about_hotel
@@ -325,7 +312,6 @@ button{
             }
 
             div{
-
                 font-weight: $font_normal;
                 font-size: $fs16;
                 line-height: 20px;
@@ -419,58 +405,63 @@ button{
     .footer_top{
         height: 320px;
         background-color: $gray_light;
-        display: flex;
-        justify-content: center;
         padding-top: 58px;
 
-        h3{
-            font-size: $fs20;
-            line-height: 24px;
-            color: $white;
-        }
+        .container{
+            width: $container-width;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
 
-        li, p, a{
-            font-weight: $font_normal;
-            font-size: $fs14;
-            line-height: 180.6%;
-            color: $white;
-            margin-top: 3px;
-        }
-
-        .geolocation{
-            img{
-                margin-top: 7px;
-                margin-right: 43px;
-            }
-        }
-
-        .contacts{
             h3{
-                padding-left: 27px;
+                font-size: $fs20;
+                line-height: 24px;
+                color: $white;
             }
-            ul{
-                li{
-                    margin-right: 42px;
-                    a{
-                        img{
-                            width: 18px;
-                            height: 15px;
-                            margin-right: 8px;
+
+            li, p, a{
+                font-weight: $font_normal;
+                font-size: $fs14;
+                line-height: 180.6%;
+                color: $white;
+                margin-top: 3px;
+            }
+
+            .geolocation{
+                img{
+                    margin-top: 7px;
+                    margin-right: 43px;
+                }
+            }
+
+            .contacts{
+                h3{
+                    padding-left: 27px;
+                }
+                ul{
+                    li{
+                        margin-right: 42px;
+                        a{
+                            img{
+                                width: 18px;
+                                height: 15px;
+                                margin-right: 8px;
+                            }
                         }
                     }
                 }
             }
-        }
 
-        .weather{
-            .messengers{
-                a{
-                    img{
-                        margin: 20px 11px 0 0 ;
+            .weather{
+                .messengers{
+                    a{
+                        img{
+                            margin: 20px 11px 0 0 ;
+                        }
                     }
                 }
             }
-        }
+    }
 
 
     }

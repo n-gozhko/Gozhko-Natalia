@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>GUEST_HOUSE</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     
@@ -82,32 +83,26 @@
 <div class="slider">
      
     <div class="container">
-        <ul>
-            <li>Даты заезда</li>
-            <li>Даты выезда</li>
-            <li>Гостей</li>
-        </ul>
 
-
-        <div class="data">
             <div>
-            <input type="date" name="trip-start" value="2022-04-04" min="2022-01-03" max="2022-12-31">
-            <img src="img/kalendar.svg" alt="kalendar">
+                <p>Даты заезда</p>
+                <input type="date" name="trip-start" value="2022-04-04" min="2022-01-03" max="2022-12-31">
+                <img src="img/kalendar.svg" alt="kalendar">
             </div>
 
             <div>
-            <input type="date" name="trip-finish" value="2022-04-06" min="2022-01-03" max="2022-12-31">
-            <img src="img/kalendar.svg" alt="kalendar">
+                <p>Даты выезда</p>
+                <input type="date" name="trip-finish" value="2022-04-06" min="2022-01-03" max="2022-12-31">
+                <img src="img/kalendar.svg" alt="kalendar">
             </div>
 
             <div>
-            <input type="number" name="number-guests" placeholder="2">
-            <img src="img/person.svg" alt="person">
+                <p>Гостей</p>
+                <input type="number" name="number-guests" placeholder="2">
+                <img src="img/person.svg" alt="person">
             </div>
 
             <input type="button" value="Проверить" class="button">
-
-        </div>
 
     </div>
 </div>
@@ -215,79 +210,80 @@
 <div class="footer">
 
     <div class="footer_top">
-        <div class="geolocation">
-            <h3>Геолокация</h3>
-            <a href="https://www.google.com/maps/place/October+St,+Gantiadi/@43.3796659,40.07797,17z/data=!3m1!4b1!4m5!3m4!1s0x40f5935de1a1905f:0x2a52117e5f9bf118!8m2!3d43.379662!4d40.0801587!5m1!1e1?hl=ru-RU" title="посмотреть на карте" target="_blank">            
-                <img src="img/karta.jpg" alt="Geolocation">
-            </a>
-        </div>
-
-        <div class="contacts">
-            <h3>Контакты</h3>
-            <ul>
-                <li> 
-                    <a href="tel:88622795689" title="позвонить" target="_blank">
-                        <img src="img/phone_white.svg" alt="phone">8 (862) 279-56-89
-                    </a> 
-                </li>
-                <li> 
-                    <a href="https://www.google.com/maps/place/October+St,+Gantiadi/@43.3796659,40.07797,17z/data=!3m1!4b1!4m5!3m4!1s0x40f5935de1a1905f:0x2a52117e5f9bf118!8m2!3d43.379662!4d40.0801587!5m1!1e1?hl=ru-RU" title="посмотреть на карте" target="_blank">
-                        <img src="img/home_white.svg" alt="home">Абхазия, Цандрыпш
-                    </a> 
-                </li>
-                <li> 
-                    <a href="https://www.google.com/maps/place/October+St,+Gantiadi/@43.3796659,40.07797,17z/data=!3m1!4b1!4m5!3m4!1s0x40f5935de1a1905f:0x2a52117e5f9bf118!8m2!3d43.379662!4d40.0801587!5m1!1e1?hl=ru-RU" title="посмотреть на карте" target="_blank">
-                        <img src="img/location.svg" alt="home">ул.Октябрьская, д.492
-                    </a> 
-                </li>
-                <li> 
-                    <a href="mailto:booking@valentinahouse.ru" title="отправить письмо" target="_blank">
-                        <img src="img/letter_white.svg" alt="letter">booking@valentinahouse.ru
-                    </a> 
-                </li>
-            </ul>
-        </div>
-
-        <div class="information">
-            <h3>Информация</h3>
-            <ul>
-                <li>Заезд: с 16:00</li>
-                <li>Выезд: до 12:00</li>
-                <li>Бесплатный WI-FI</li>
-                <li>Бесплатная парковка</li>
-                <li>О нас</li>
-                <li>Условия бронирования</li>
-                <li>Политика конфиденциальности</li>
-            </ul>
-
-        </div>
-
-        <div class="weather">
-            <h3>Погода</h3>
-            <p>Яндекс.Погода : +17</p>
-
-            <div class="messengers">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="img/facebook_white.svg" alt="facebook">
+        <div class="container">
+            <div class="geolocation">
+                <h3>Геолокация</h3>
+                <a href="https://www.google.com/maps/place/October+St,+Gantiadi/@43.3796659,40.07797,17z/data=!3m1!4b1!4m5!3m4!1s0x40f5935de1a1905f:0x2a52117e5f9bf118!8m2!3d43.379662!4d40.0801587!5m1!1e1?hl=ru-RU" title="посмотреть на карте" target="_blank">            
+                    <img src="img/karta.jpg" alt="Geolocation">
                 </a>
-                <a href="https://vk.com/" target="_blank">
-                    <img src="img/vkontakte_white.svg" alt="vkontakte">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="img/instagram_white.svg" alt="instagram"> 
-                </a>
-                <a href="https://web.telegram.org/k/" target="_blank">
-                    <img src="img/telegram_white.svg" alt="telegram">
-                </a>
-                <a href="https://www.viber.com/ru/" target="_blank">
-                    <img src="img/viber_white.svg" alt="viber">
-                </a>
+            </div>
+
+            <div class="contacts">
+                <h3>Контакты</h3>
+                <ul>
+                    <li> 
+                        <a href="tel:88622795689" title="позвонить" target="_blank">
+                            <img src="img/phone_white.svg" alt="phone">8 (862) 279-56-89
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="https://www.google.com/maps/place/October+St,+Gantiadi/@43.3796659,40.07797,17z/data=!3m1!4b1!4m5!3m4!1s0x40f5935de1a1905f:0x2a52117e5f9bf118!8m2!3d43.379662!4d40.0801587!5m1!1e1?hl=ru-RU" title="посмотреть на карте" target="_blank">
+                            <img src="img/home_white.svg" alt="home">Абхазия, Цандрыпш
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="https://www.google.com/maps/place/October+St,+Gantiadi/@43.3796659,40.07797,17z/data=!3m1!4b1!4m5!3m4!1s0x40f5935de1a1905f:0x2a52117e5f9bf118!8m2!3d43.379662!4d40.0801587!5m1!1e1?hl=ru-RU" title="посмотреть на карте" target="_blank">
+                            <img src="img/location.svg" alt="home">ул.Октябрьская, д.492
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="mailto:booking@valentinahouse.ru" title="отправить письмо" target="_blank">
+                            <img src="img/letter_white.svg" alt="letter">booking@valentinahouse.ru
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+
+            <div class="information">
+                <h3>Информация</h3>
+                <ul>
+                    <li>Заезд: с 16:00</li>
+                    <li>Выезд: до 12:00</li>
+                    <li>Бесплатный WI-FI</li>
+                    <li>Бесплатная парковка</li>
+                    <li>О нас</li>
+                    <li>Условия бронирования</li>
+                    <li>Политика конфиденциальности</li>
+                </ul>
 
             </div>
 
+            <div class="weather">
+                <h3>Погода</h3>
+                <p>Яндекс.Погода : +17</p>
 
+                <div class="messengers">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="img/facebook_white.svg" alt="facebook">
+                    </a>
+                    <a href="https://vk.com/" target="_blank">
+                        <img src="img/vkontakte_white.svg" alt="vkontakte">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/instagram_white.svg" alt="instagram"> 
+                    </a>
+                    <a href="https://web.telegram.org/k/" target="_blank">
+                        <img src="img/telegram_white.svg" alt="telegram">
+                    </a>
+                    <a href="https://www.viber.com/ru/" target="_blank">
+                        <img src="img/viber_white.svg" alt="viber">
+                    </a>
+
+                </div>
+
+
+            </div>
         </div>
-
     </div>
 
 
