@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none; }
+
+body {
+  height: 10000px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600; }
+
+a {
+  text-decoration: none;
+  color: transparent; }
+
+li {
+  list-style-type: none; }
+
+button {
+  border: none;
+  outline: none; }
+
+.header .container {
+  width: 1224px;
+  margin: 0 auto;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .header .container .header_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header .container .header_top div {
+      margin-top: 12px; }
+      .header .container .header_top div img {
+        margin-right: 13px; }
+      .header .container .header_top div span {
+        font-style: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1E1E1E; }
+      .header .container .header_top div:first-child {
+        margin-right: 452px; }
+      .header .container .header_top div:nth-child(2) {
+        margin-right: 46px; }
+      .header .container .header_top div:last-child {
+        margin-right: 40px; }
+  .header .container .header_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header .container .header_bottom p {
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 32px;
+      color: #585858;
+      margin-top: 18px;
+      margin-right: 111px; }
+    .header .container .header_bottom ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .header .container .header_bottom ul li {
+        margin-right: 35px;
+        margin-top: 45px; }
+        .header .container .header_bottom ul li a {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #1E1E1E; }
+    .header .container .header_bottom .messengers a img {
+      margin-right: 11px;
+      margin-top: 35px; }
+    .header .container .header_bottom .messengers a:last-child {
+      position: relative; }
+      .header .container .header_bottom .messengers a:last-child img {
+        margin-right: 38px; }
+        .header .container .header_bottom .messengers a:last-child img:last-child {
+          position: absolute;
+          top: -2px;
+          left: 8px;
+          margin-top: 0; }
+
+.slider {
+  background: url(../img/fon.jpg) top no-repeat;
+  height: 680px;
+  margin-top: 9px;
+  padding-top: 253px;
+  background-size: cover;
+  position: relative; }
+  .slider.slider:before {
+    content: '';
+    position: absolute;
+    top: 584px;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: url(../img/fon_2.png) no-repeat; }
+  .slider .container {
+    width: 1224px;
+    height: 124px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding-left: 83px;
+    padding-top: 22px; }
+    .slider .container ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .slider .container ul li {
+        font-size: 16px;
+        line-height: 20px;
+        color: #585858;
+        margin-bottom: 6px; }
+        .slider .container ul li:first-child {
+          padding-right: 199px; }
+        .slider .container ul li:nth-child(2) {
+          padding-right: 194px; }
+        .slider .container ul li:last-child {
+          padding-right: 473px; }
+    .slider .container .data {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .slider .container .data div {
+        position: relative; }
+        .slider .container .data div input {
+          background: #FAFAFA;
+          border: 1px solid #D9D9D9;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          border-radius: 10px;
+          width: 260px;
+          height: 36px;
+          margin-right: 46px;
+          padding-left: 8px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #777777; }
+          .slider .container .data div input[type="date"]::-webkit-calendar-picker-indicator {
+            width: 90%;
+            left: 0;
+            top: 13px;
+            position: absolute;
+            z-index: 2;
+            background-color: transparent;
+            color: transparent; }
+        .slider .container .data div img {
+          position: absolute;
+          left: 234px;
+          top: 7px; }
+      .slider .container .data .button {
+        width: 140px;
+        height: 36px;
+        background-color: #3F8CFF;
+        -webkit-box-shadow: 0px 2px 20px rgba(63, 140, 255, 0.5);
+                box-shadow: 0px 2px 20px rgba(63, 140, 255, 0.5);
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF; }
+
+.about_hotel .container {
+  width: 1224px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  margin-top: 36px;
+  height: 1600px;
+  padding: 0; }
+  .about_hotel .container p {
+    text-align: center;
+    font-size: 30px;
+    line-height: 37px;
+    color: #585858;
+    margin-bottom: 40px; }
+  .about_hotel .container .rooms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 80px; }
+    .about_hotel .container .rooms div {
+      width: 600px;
+      height: 300px;
+      -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+              box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25); }
+      .about_hotel .container .rooms div:first-child {
+        background: url(../img/room_fon.png) bottom no-repeat, url(../img/room1_2.jpg) no-repeat;
+        margin-right: 20px;
+        margin-bottom: 24px; }
+      .about_hotel .container .rooms div:nth-child(2) {
+        background: url(../img/room_fon.png) bottom no-repeat, url(../img/room2_2.jpg) no-repeat;
+        margin-bottom: 24px; }
+      .about_hotel .container .rooms div:nth-child(3) {
+        background: url(../img/room_fon.png) bottom no-repeat, url(../img/room3_2.jpg) no-repeat;
+        margin-right: 20px; }
+      .about_hotel .container .rooms div:last-child {
+        background: url(../img/room_fon.png) bottom no-repeat, url(../img/room4_2.jpg) no-repeat; }
+      .about_hotel .container .rooms div p {
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+        padding-top: 138px;
+        margin-bottom: 8px; }
+      .about_hotel .container .rooms div ul {
+        padding-left: 35px; }
+        .about_hotel .container .rooms div ul li {
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;
+          padding-bottom: 3px; }
+  .about_hotel .container .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 1094px;
+    margin: 0 auto 80px auto; }
+    .about_hotel .container .description img {
+      padding-right: 37px; }
+    .about_hotel .container .description div {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #777777; }
+  .about_hotel .container .review {
+    width: 1094px;
+    margin: 0 auto;
+    padding-top: 23px;
+    position: relative;
+    background-color: #3F8CFF;
+    -webkit-box-shadow: 0px 2px 60px rgba(63, 140, 255, 0.5);
+            box-shadow: 0px 2px 60px rgba(63, 140, 255, 0.5);
+    border-radius: 10px;
+    height: 115px; }
+    .about_hotel .container .review p {
+      margin: 0 6%;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF; }
+      .about_hotel .container .review p:last-child {
+        font-size: 26px;
+        line-height: 32px;
+        padding-top: 2px; }
+    .about_hotel .container .review::before {
+      content: "";
+      position: absolute;
+      left: 47%;
+      bottom: -17px;
+      width: 0;
+      height: 0;
+      border-right: solid transparent 31px;
+      border-bottom: solid transparent 1px;
+      border-left: solid transparent 31px;
+      border-top: solid #3F8CFF 16px; }
+  .about_hotel .container .photo {
+    width: 80px;
+    height: 80px;
+    background: #FFB23F;
+    padding: 22px;
+    margin: 39px auto 80px auto;
+    position: relative; }
+    .about_hotel .container .photo::before {
+      content: url(../img/strelka_vlevo.svg);
+      width: 0;
+      height: 0;
+      left: -35%;
+      top: 27%;
+      position: absolute; }
+    .about_hotel .container .photo::after {
+      content: url(../img/strelka_vpravo.svg);
+      width: 0;
+      height: 0;
+      right: -14%;
+      top: 27%;
+      position: absolute; }
+
+.footer .footer_top {
+  height: 320px;
+  background-color: #777777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 58px; }
+  .footer .footer_top h3 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF; }
+  .footer .footer_top li, .footer .footer_top p, .footer .footer_top a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180.6%;
+    color: #FFFFFF;
+    margin-top: 3px; }
+  .footer .footer_top .geolocation img {
+    margin-top: 7px;
+    margin-right: 43px; }
+  .footer .footer_top .contacts h3 {
+    padding-left: 27px; }
+  .footer .footer_top .contacts ul li {
+    margin-right: 42px; }
+    .footer .footer_top .contacts ul li a img {
+      width: 18px;
+      height: 15px;
+      margin-right: 8px; }
+  .footer .footer_top .weather .messengers a img {
+    margin: 20px 11px 0 0; }
+.footer .footer_bottom {
+  height: 60px;
+  background-color: #626262;
+  text-align: center;
+  padding-top: 23px; }
+  .footer .footer_bottom p {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF; }
+
+/*# sourceMappingURL=style.css.map */
