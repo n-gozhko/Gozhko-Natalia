@@ -25,12 +25,6 @@
       width: 190px; }
     .slider .container div img {
       left: 160px; }
-    .slider .container div p:first-child {
-      padding-right: 50px; }
-    .slider .container div p:nth-child(2) {
-      padding-right: 50px; }
-    .slider .container div p:last-child {
-      padding-right: 345px; }
     .slider .container .button {
       width: 140px;
       height: 36px;
@@ -98,22 +92,14 @@
     margin-top: 20px; }
     .slider .container {
       width: 600px;
-      height: auto; }
-      .slider .container ul {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        .slider .container ul li:last-child {
-          -webkit-box-ordinal-group: 3;
-              -ms-flex-order: 2;
-                  order: 2;
-          margin-right: 20px; }
-      .slider .container .data {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        .slider .container .data input:first-child {
-          -webkit-box-ordinal-group: 4;
-              -ms-flex-order: 3;
-                  order: 3; }
+      height: auto;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 3% 6% 3% 6%; }
+      .slider .container div:first-child input {
+        margin-bottom: 20px; }
+      .slider .container .button {
+        margin-right: 50px; }
 
   .about_hotel .container {
     width: 600px;
@@ -168,6 +154,43 @@
     display: none; }
   .header .container .header_bottom p {
     text-align: center;
-    margin: 5px auto 5px auto; } }
+    margin: 5px auto 5px auto; }
+
+  .slider {
+    background: none;
+    margin-top: 0;
+    padding-top: 0;
+    height: auto; }
+    .slider::before {
+      display: none; }
+    .slider .container {
+      width: 100%;
+      background-color: #F9F9F9;
+      padding: 26px 0 24px 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .slider .container div {
+        margin: 0 auto; }
+        .slider .container div p {
+          font-weight: 500;
+          color: #777777;
+          text-align: center;
+          padding: 8px 0 8px 0; }
+        .slider .container div:first-child input {
+          margin-bottom: 0; }
+        .slider .container div input {
+          width: 260px; }
+        .slider .container div img {
+          left: 228px;
+          top: 49px; }
+      .slider .container .button {
+        margin: 36px auto 0 auto; }
+
+  .about_hotel .container {
+    margin-top: 24px; }
+    .about_hotel .container p {
+      margin-bottom: 18px; } }
 
 /*# sourceMappingURL=media.css.map */

@@ -65,17 +65,6 @@
             img{
                 left: 160px;
             }
-            p{
-                &:first-child{
-                    padding-right: 50px;
-                }
-                &:nth-child(2){
-                    padding-right: 50px;
-                }
-                &:last-child{
-                    padding-right: 345px;
-                } 
-            } 
         }  
         .button{
             width: 140px;
@@ -126,8 +115,6 @@
         .review{
                 width: $container-900;
             }
-
-
     }
 }
 
@@ -167,7 +154,6 @@
         }
     }
 }
-
 
 }
 
@@ -221,32 +207,22 @@
         }
     }
 
-    //ДОДЕЛАТЬ
     .slider{
         margin-top: 20px;
-
         .container{
             width: $container-600;
             height: auto;
-
-            ul{
-                flex-wrap: wrap;
-                li{
-                    
-                &:last-child{
-                    order: 2;
-                    margin-right: 20px;
-                }
-                }
-            }
-
-            .data{
-                flex-wrap: wrap;
-                input{
-                    &:first-child{
-                        order: 3;
+            flex-wrap: wrap;
+            padding: 3% 6% 3% 6%;
+            div{
+                &:first-child{
+                    input{
+                        margin-bottom: 20px;
                     }
                 }
+            }
+            .button{
+                margin-right: 50px;
             }
         }
     }
@@ -365,8 +341,60 @@
     }
 
     .slider{
-        
+        background: none;
+        margin-top: 0;
+        padding-top: 0;
+        height: auto;
+        &::before{
+            display: none;
+        }
+
+        .container{
+            width: 100%;
+            background-color: $background;
+            padding: 26px 0 24px 0;
+            flex-direction: column;
+
+            div{
+                margin: 0 auto;
+                p{
+                   font-weight: $font_normal;
+                    color: $gray_light;
+                    text-align: center;
+                    padding: 8px 0 8px 0;
+                }
+                &:first-child{
+                    input{
+                        margin-bottom: 0;
+                    }
+                }
+                input{
+                    width: 260px;
+                }
+                img{
+                    left: 228px;
+                    top: 49px;
+                }
+            }
+
+            .button{
+                margin: 36px auto 0 auto;
+            }
+        }
     }
-    
+
+    .about_hotel{
+        .container{
+            margin-top: 24px;
+
+            p{
+                margin-bottom: 18px;
+            }
+        }
+
+    }
+
+
+
 }
 

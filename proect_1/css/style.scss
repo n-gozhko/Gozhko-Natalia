@@ -163,16 +163,6 @@ button{
                     line-height: 20px;
                     color: $gray;
                     margin-bottom: 6px;
-
-                &:first-child{
-                    padding-right: 199px;
-                }
-                &:nth-child(2){
-                    padding-right: 194px;
-                }
-                &:last-child{
-                    padding-right: 473px;
-                } 
                 }
 
             input{
@@ -181,8 +171,7 @@ button{
                 box-sizing: border-box;
                 border-radius: 10px;
                 width: 260px;
-                height: 36px; 
-                margin-right: 46px;  
+                height: 36px;  
                 padding-left: 8px;
 
                 font-weight: $font_normal;
@@ -388,12 +377,6 @@ button{
                     position: absolute;
                 }
             }
-        
-
-
-
-
-
 
     }
 
